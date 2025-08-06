@@ -35,5 +35,5 @@ title: Portfolio académique – Karl Loyau
 ## 📄 À propos
 
 Ce site regroupe mes travaux de recherche en mathématiques appliquées à la finance, à la cryptographie et à l’informatique.  
-📍 Étudiant en L3 à l’Université Grenoble Alpes – échange Erasmus à la TUM.  
+📍 Étudiant en L3 à l’Université Grenoble Alpes & Université Technique de Munich.  
 📫 Contact : karl.loyau@tum.de
