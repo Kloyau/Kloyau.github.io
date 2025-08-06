@@ -11,6 +11,15 @@
   <header>
     <img src="/assets/logo_x.png" alt="Logo École Polytechnique" />
     <h1>Portfolio académique – Karl Loyau</h1>
+    <nav class="topnav">
+  <a href="/index.html">Projets</a>
+  <a href="/publications.html">Publications</a>
+  <a href="/certifications.html">Certifications</a>
+  <a href="/cv.html">CV</a>
+  <a href="/parcours.html">Parcours</a>
+  <a href="/recommandations.html">Recommandations</a>
+  <a href="/liens.html">Liens</a>
+</nav>
   </header>
 
   <div class="container">
