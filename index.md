@@ -90,6 +90,6 @@ Roadmap pour une transition post-NISQ
 
 ## 📚 À propos
 
-- 🎓 Université Grenoble Alpes, parcours Mathématiques et Informatique International
+- 🎓 Licence à L'Université Grenoble Alpes, parcours Mathématiques et Informatique International
 - 🇩🇪 Programme 2025–2026 en Mathématiques Avancés à l'Université Technique de Munich
 - ✉️ Contact : karl.loyau@tum.de
