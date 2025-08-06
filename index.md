@@ -18,6 +18,14 @@ title: Portfolio académique – Karl Loyau
 
 ---
 
+## Mémoire de L2 - Algèbre et Informatique Quantique
+
+- **Algebraic Framework for Characterization
+of Mixed States in Quantum Computing
+Systems**
+  📄 [PDF](./memoires/L2/PAN_quantum.pdf)
+---
+
 ## Thèse de L3 – Cryptographie post-quantique
 
 - **Codage MDPC et sécurité post-NISQ**  
