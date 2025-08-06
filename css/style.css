@@ -1,81 +1,50 @@
-:root {
-    --blue-x: #01426A;
-    --grey-light: #B8DDE1;
-    --white: #FFFFFF;
-    --text: #222222;
-    --accent: #01426A;
-    --font-family-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-family-serif: Georgia, 'Times New Roman', serif;
-    --max-width: 820px;
-  }
-  
-  body {
+body {
+    font-family: 'Georgia', serif;
+    background: url('/assets/background.png') repeat;
+    background-size: cover;
+    color: #222;
     margin: 0;
     padding: 0;
-    font-family: var(--font-family-sans);
-    color: var(--text);
-    background: var(--white);
-    line-height: 1.7;
+  }
+  
+  .topnav {
+    background-color: #002147;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .topnav a {
+    display: inline-block;
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .topnav a:hover {
+    background-color: #00172d;
   }
   
   .container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffffd9;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   }
   
-  header {
-    text-align: center;
-    padding: 40px 0;
+  .card {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    overflow: hidden;
   }
   
-  header img {
-    height: 80px;
-    display: block;
-    margin: 0 auto 10px;
-  }
-  
-  header h1 {
-    font-family: var(--font-family-serif);
-    color: var(--blue-x);
-    font-size: 1.9rem;
-    margin: 0;
-  }
-  
-  h2 {
-    font-family: var(--font-family-serif);
-    color: var(--blue-x);
-    font-size: 1.5rem;
-    border-bottom: 1px solid var(--grey-light);
-    padding-bottom: 6px;
-    margin-top: 50px;
-  }
-  
-  h3 {
-    font-family: var(--font-family-serif);
-    color: var(--accent);
-    font-size: 1.2rem;
-    margin-top: 30px;
-    margin-bottom: 8px;
-  }
-  
-  a {
-    color: var(--blue-x);
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  section {
-    margin-bottom: 40px;
-  }
-  
-  footer {
-    text-align: center;
-    margin-top: 60px;
-    color: #666;
-    font-size: 0.9em;
-    padding-bottom: 20px;
+  .card-logo {
+    float: right;
+    height: 40px;
+    margin-left: 10px;
   }
