@@ -62,7 +62,7 @@ Systems</h3>
 
 ---
 
-## 🔐 Thèse de L3 – Cryptographie post-quantique
+## Thèse de L3 – Cryptographie post-quantique
 
 <div class="card">
 <h3>🧩 Codage MDPC et cryptosystèmes résistants au quantique</h3>
@@ -72,7 +72,7 @@ Systems</h3>
 
 ---
 
-## 💼 Rapport de stage informatique
+## 💼 Rapports de stage
 
 <div class="card">
 <h3>🖥️ Stage IT – Le Bon Marché (Paris)</h3>
