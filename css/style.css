@@ -1,95 +1,97 @@
-
 :root {
-    --main-color: #002855; /* Bleu X */
-    --accent-color: #c8102e; /* Rouge discret */
-    --text-color: #1a1a1a;
-    --background-color: #f8f9fa;
-    --card-bg: #ffffff;
-    --card-border: #e0e0e0;
-    --max-width: 900px;
+    --background-color: #ffffff;
+    --main-color: #002147; /* Bleu X */
+    --text-color: #111111;
+    --title-color: #002147;
+    --accent-color: #b30b00; /* Rouge sobre */
+    --font-serif: 'Georgia', 'Times New Roman', serif;
+    --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --max-width: 850px;
   }
   
+  /* Général */
   body {
-    margin: 0;
-    font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
-    background: var(--background-color);
+    background-color: var(--background-color);
     color: var(--text-color);
-    line-height: 1.6;
-  }
-  
-  header {
-    background: var(--main-color);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  header img {
-    height: 60px;
-    vertical-align: middle;
-    margin-right: 15px;
-  }
-  
-  header h1 {
-    display: inline-block;
-    font-size: 1.8rem;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.65;
     margin: 0;
+    padding: 0;
   }
   
   .container {
     max-width: var(--max-width);
-    margin: 40px auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 40px 20px;
   }
   
+  /* Header */
+  header {
+    text-align: center;
+    padding: 40px 0 20px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  header img {
+    height: 70px;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    color: var(--title-color);
+  }
+  
+  /* Titres */
   h2 {
-    border-bottom: 2px solid var(--main-color);
-    padding-bottom: 4px;
+    font-size: 1.4rem;
+    font-family: var(--font-serif);
     color: var(--main-color);
-    margin-top: 60px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 6px;
+    margin-top: 50px;
   }
   
-  .card {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 6px;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-  }
-  
-  .card h3 {
-    margin-top: 0;
+  h3 {
+    font-size: 1.1rem;
+    font-family: var(--font-serif);
+    margin-top: 25px;
+    margin-bottom: 8px;
     color: var(--accent-color);
   }
   
-  .card a {
-    text-decoration: none;
+  /* Liens */
+  a {
     color: var(--main-color);
-    font-weight: bold;
+    text-decoration: none;
   }
   
-  .card a:hover {
+  a:hover {
     text-decoration: underline;
+  }
+  
+  /* Sections */
+  .section {
+    margin-bottom: 50px;
+  }
+  
+  /* Cartes sobres */
+  .card {
+    background: #f8f8f8;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    margin-bottom: 20px;
   }
   
   footer {
     text-align: center;
     font-size: 0.9em;
-    color: #666;
-    margin: 60px 0 20px;
-  }
-  
-  @media (max-width: 700px) {
-    header h1 {
-      font-size: 1.2rem;
-    }
-  
-    .container {
-      padding: 0 10px;
-    }
-  
-    .card {
-      padding: 15px;
-    }
+    color: #777;
+    margin-top: 60px;
+    padding-bottom: 20px;
   }
