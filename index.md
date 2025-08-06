@@ -5,76 +5,61 @@ title: Portfolio académique – Karl Loyau
 
 <link rel="stylesheet" href="/css/style.css">
 
-# Portfolio académique – Karl Loyau
+# Portfolio académique  
+Karl Loyau
 
 Étudiant en L3 Mathématiques & Informatique – Université Grenoble Alpes  
-Erasmus à la TUM (Technical University of Munich)  
-Spécialisation : Finance Quantitative, Cryptographie post-quantique, Informatique théorique
+Erasmus 2025–2026 à la TUM (Technische Universität München)  
+Spécialisation : Finance quantitative · Cryptographie post-quantique · Informatique théorique
 
 ---
 
-## 🧾 Mini-mémoires en Mathématiques Financières
+## 1. Mini-mémoires en Mathématiques Financières
 
-<div class="card">
-<h3>📘 Heston & SABR – Volatilité stochastique</h3>
+### 1.1 Heston & SABR – Volatilité stochastique  
 Méthodes analytiques et numériques de pricing avec modèles à volatilité stochastique.  
-👉 <a href="./memoires/heston-sabr/heston_sabr.pdf">Lire le mémoire</a>
-</div>
+📄 [Lire le mémoire (PDF)](./memoires/heston-sabr/heston_sabr.pdf)
 
-<div class="card">
-<h3>📕 Modèles de marchés illiquides</h3>
+### 1.2 Modèles de marchés illiquides  
 Pricing dans des contextes de liquidité restreinte et contraintes d’exécution.  
-👉 <a href="./memoires/marche-illiquide/illiquid_pricing.pdf">Lire le mémoire</a>
-</div>
+📄 [Lire le mémoire (PDF)](./memoires/marche-illiquide/illiquid_pricing.pdf)
 
-<div class="card">
-<h3>📗 Méthodes numériques pour modèles à sauts</h3>
+### 1.3 Méthodes numériques pour modèles à sauts  
 Approximation et calibration dans les modèles à sauts (Merton, Kou, etc.)  
-👉 <a href="./memoires/numerique-sauts/sauts_numeriques.pdf">Lire le mémoire</a>
-</div>
+📄 [Lire le mémoire (PDF)](./memoires/numerique-sauts/sauts_numeriques.pdf)
 
 ---
 
-## Mémoire de L2 - Algèbre en Informatique Quantique
+## 2. Mémoire de L2 – Algèbre en Informatique Quantique
 
-<div class="card">
-<h3>🧩 Algebraic Framework for Characterization
-of Mixed States in Quantum Computing
-Systems</h3>
-Étude d'un cadre algèbrique unifié pour la conceptions de systèmes de calculs quantiques
-👉 <a href="./memoires/l2/PAN_quantum.pdf">Lire le mémoire</a>
-</div>
+### 2.1 Algebraic Framework for Characterization of Mixed States in Quantum Computing Systems  
+Étude d’un cadre algébrique unifié pour la conception de systèmes de calculs quantiques.  
+📄 [Lire le mémoire (PDF)](./memoires/l2/PAN_quantum.pdf)
 
 ---
 
-## Thèse de L3 – Cryptographie post-quantique
+## 3. Thèse de L3 – Cryptographie Post-Quantique
 
-<div class="card">
-<h3>🧩 Codage MDPC et cryptosystèmes résistants au quantique</h3>
+### 3.1 Codage MDPC et cryptosystèmes résistants au quantique  
 Étude approfondie des codes MDPC, sécurité post-NISQ, attaques algébriques.  
-👉 <a href="./these-mdpc/mdpc.pdf">Lire la thèse</a>
-</div>
+📄 [Lire la thèse (PDF)](./these-mdpc/mdpc.pdf)
 
 ---
 
-## 💼 Rapports de stage
+## 4. Rapports de Stage
 
-<div class="card">
-<h3>🖥️ Stage IT – Le Bon Marché (Paris)</h3>
-Audit de sécurité, interconnexion des modules SaaS, cartographie du SI.  
-👉 <a href="./rapport-stage/rapport_stage.pdf">Lire le rapport</a>
-</div>
+### 4.1 Stage IT – Le Bon Marché (Paris)  
+Audit de sécurité, interconnexion des modules SaaS, cartographie du système d’information.  
+📄 [Lire le rapport (PDF)](./rapport-stage/rapport_stage.pdf)
 
-<div class="card">
-<h3>🖥️ Addendum I – Le Bon Marché (Paris)</h3>
-Roadmap pour une transition post-NISQ  
-👉 <a href="./rapport-stage/rapport_stage.pdf">Lire le rapport</a>
-</div>
+### 4.2 Addendum I – Transition post-NISQ  
+Roadmap de transition cryptographique pour infrastructures commerciales.  
+📄 [Lire le document (PDF)](./rapport-stage/rapport_stage.pdf)
 
 ---
 
-## 📚 À propos
+## 5. À propos
 
-- 🎓 Licence à L'Université Grenoble Alpes, parcours Mathématiques et Informatique International
-- 🇩🇪 Programme 2025–2026 en Mathématiques Avancés à l'Université Technique de Munich
+- 🎓 Licence Mathématiques & Informatique International – Université Grenoble Alpes  
+- 🇩🇪 Étudiant Erasmus 2025–2026 – Mathematics Department, TUM  
 - ✉️ Contact : karl.loyau@tum.de
