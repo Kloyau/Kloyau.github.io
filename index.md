@@ -6,52 +6,65 @@ title: Portfolio académique – Karl Loyau
 <link rel="stylesheet" href="/css/style.css">
 
 <header>
-  <img src="/assets/logo_x.png" alt="Logo X" />
-  <h1>Portfolio académique – Karl Loyau</h1>
+  <img src="/assets/logo_x.png" alt="École Polytechnique" />
+  <h1>Portfolio académique – Karl Loyau</h1>
 </header>
 
 <div class="container">
 
-## 1. Mini-mémoires en mathématiques financières
+## 1. Mini‑mémoires en mathématiques financières
 
-### Heston & SABR – Volatilité stochastique  
-Méthodes analytiques et numériques de pricing avec modèles à volatilité stochastique.  
+### 1.1 Pricing en volatilité stochastique (Heston/SABR)  
+Méthodes analytiques et numériques de pricing avec modèles de volatilité stochastique.  
 📄 [Lire le mémoire (PDF)](./memoires/heston-sabr/heston_sabr.pdf)
 
-### Modèles de marchés illiquides  
-Pricing dans des contextes de liquidité restreinte et contraintes d’exécution.  
+### 1.2 Modèles de marchés illiquides  
+Modélisation de marchés à faible liquidité, pricing sous contraintes d’exécution.  
 📄 [Lire le mémoire (PDF)](./memoires/marche-illiquide/illiquid_pricing.pdf)
 
-### Méthodes numériques pour modèles à sauts  
-Approximation et calibration dans les modèles à sauts (Merton, Kou, etc.)  
+### 1.3 Modèles à sauts – simulation & calibration  
+Étude de méthodes (Monte Carlo, FFT…) pour modèles de type Merton/Kou.  
 📄 [Lire le mémoire (PDF)](./memoires/numerique-sauts/sauts_numeriques.pdf)
+
+---
 
 ## 2. Mémoire de L2 – Algèbre & informatique quantique
 
-### Algebraic Framework for Mixed States  
-Cadre algébrique unifié pour la conception de systèmes de calcul quantique.  
+### 2.1 Cadre algébrique pour états mixtes quantiques  
+Proposition d’un cadre unifié pour la modélisation de calcul quantique.  
 📄 [Lire le mémoire (PDF)](./memoires/l2/PAN_quantum.pdf)
+
+---
 
 ## 3. Thèse de L3 – Cryptographie post-quantique
 
-### Codage MDPC et sécurité post-NISQ  
-Étude des cryptosystèmes à base de codes quasi-cycliques.  
+### 3.1 Codes MDPC et sécurité post‑quantum  
+Étude des vulnérabilités algébriques et robustesse post‑quantique.  
 📄 [Lire la thèse (PDF)](./these-mdpc/mdpc.pdf)
 
-## 4. Rapports de stage – Informatique
+---
 
-### Systèmes IT – Le Bon Marché  
-Cartographie inter-SI, sécurité, échanges SaaS.  
+## 4. Rapports de stage
+
+### 4.1 Stage IT – Le Bon Marché (Paris)  
+Audit SI, interconnexion SaaS, gestion de la sécurité.  
 📄 [Lire le rapport (PDF)](./rapport-stage/rapport_stage.pdf)
 
-### Addendum I – Transition post-NISQ  
-Roadmap de migration vers des systèmes cryptographiques résistants au quantique.  
-📄 [Lire l'addendum (PDF)](./rapport-stage/rapport_stage.pdf)
+### 4.2 Addendum I – Transition post‑NISQ  
+Feuille de route cryptographique pour systèmes commerciaux.  
+📄 [Lire l’addendum (PDF)](./rapport-stage/rapport_stage.pdf)
+
+---
 
 ## 5. À propos
 
-Karl Loyau – L3 Mathématiques & Informatique – Université Grenoble Alpes  
-Erasmus 2025–2026 à la TUM, Munich  
-✉️ Contact : karl.loyau@tum.de
+**Karl Loyau** — Étudiant L3 Mathématiques & Informatique  
+Université Grenoble Alpes — Erasmus à la TUM (2025–26)  
+Spécialisations : finance quantitative · crypto post-quantum · informatique théorique  
+Contact : karl.loyau@tum.de
 
-</div>
+---
+
+<footer>
+© Karl Loyau — Portfolio académique
+</footer>
