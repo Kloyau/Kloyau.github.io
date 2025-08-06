@@ -3,7 +3,7 @@ layout: default
 title: Portfolio académique – Karl Loyau
 ---
 
-# 👨‍🎓 Travaux de recherche
+# Travaux de recherche
 
 ## Mini-mémoires Math-Finance
 
@@ -36,4 +36,4 @@ title: Portfolio académique – Karl Loyau
 
 Ce site regroupe mes travaux de recherche en mathématiques appliquées à la finance, à la cryptographie et à l’informatique.  
 📍 Étudiant en L3 à l’Université Grenoble Alpes – échange Erasmus à la TUM.  
-📫 Contact : karl.loyau@etu.univ-grenoble-alpes.fr
+📫 Contact : karl.loyau@tum.de
