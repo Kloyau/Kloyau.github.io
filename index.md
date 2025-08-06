@@ -20,7 +20,7 @@ a {
 }
 </style>
 
-# 👨‍🎓 Portfolio académique – Karl Loyau
+# Portfolio académique – Karl Loyau
 
 Étudiant en L3 Mathématiques & Informatique – Université Grenoble Alpes  
 Erasmus à la TUM (Technical University of Munich)  
@@ -77,6 +77,12 @@ Systems</h3>
 <div class="card">
 <h3>🖥️ Stage IT – Le Bon Marché (Paris)</h3>
 Audit de sécurité, interconnexion des modules SaaS, cartographie du SI.  
+👉 <a href="./rapport-stage/rapport_stage.pdf">Lire le rapport</a>
+</div>
+
+<div class="card">
+<h3>🖥️ Addendum I – Le Bon Marché (Paris)</h3>
+Roadmap pour une transition post-NISQ  
 👉 <a href="./rapport-stage/rapport_stage.pdf">Lire le rapport</a>
 </div>
 
