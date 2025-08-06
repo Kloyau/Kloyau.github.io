@@ -3,22 +3,7 @@ layout: default
 title: Portfolio académique – Karl Loyau
 ---
 
-<style>
-.card {
-  background: #f8f8f8;
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-h1, h2, h3 {
-  color: #003366;
-}
-a {
-  text-decoration: none;
-  color: #0066cc;
-}
-</style>
+<link rel="stylesheet" href="/css/style.css">
 
 # Portfolio académique – Karl Loyau
 

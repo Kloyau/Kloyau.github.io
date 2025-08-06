@@ -1,0 +1,32 @@
+body {
+    font-family: "Palatino Linotype", "Georgia", serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #222;
+    background: #ffffff;
+    margin: 40px auto;
+    max-width: 850px;
+    padding: 0 20px;
+  }
+  
+  h1, h2, h3 {
+    font-family: "Palatino Linotype", "Georgia", serif;
+    color: #111;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+    margin-top: 40px;
+  }
+  
+  a {
+    color: #003366;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #aaa;
+    margin: 40px 0;
+  }
