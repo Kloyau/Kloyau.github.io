@@ -24,6 +24,7 @@ title: Portfolio académique – Karl Loyau
 of Mixed States in Quantum Computing
 Systems**
   📄 [PDF](./memoires/L2/PAN_quantum.pdf)
+  
 ---
 
 ## Thèse de L3 – Cryptographie post-quantique
