@@ -45,6 +45,9 @@ body {
   
   .card-logo {
     float: right;
-    height: 40px;
-    margin-left: 10px;
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    margin-left: 15px;
+    margin-top: 5px;
   }
