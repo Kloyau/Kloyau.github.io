@@ -44,11 +44,10 @@ body {
   }
   
   .card-logo {
-    width: 120px;       /* largeur fixe uniforme */
+    width: 140px;       /* largeur fixe uniforme */
     height: auto;       /* garde les proportions */
     object-fit: contain;
     display: block;
     margin-left: auto;
     margin-right: 0;
-    border: 1px solid red;
   }
