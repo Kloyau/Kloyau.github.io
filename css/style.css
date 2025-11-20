@@ -1,129 +1,316 @@
+/* 
+ * Professional Academic Portfolio Theme
+ * Inspired by Harvard & École Polytechnique
+ */
+
+:root {
+  /* Color Palette */
+  --primary-color: #0a1f3d; /* Deep Navy Blue */
+  --secondary-color: #b31b1b; /* Academic Red/Crimson accent */
+  --text-color: #333333;
+  --light-text: #666666;
+  --background-color: #f9f9f9;
+  --card-bg: #ffffff;
+  --border-color: #e0e0e0;
+  
+  /* Typography */
+  --font-heading: 'Merriweather', serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Spacing */
+  --container-width: 1000px;
+  --spacing-unit: 1rem;
+}
+
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Georgia', serif;
-    background: url('/assets/background.png') repeat;
-    background-size: cover;
-    color: #222;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .topnav {
-    background-color: #002147;
-    overflow: hidden;
-    text-align: center;
-  }
-  
-  .topnav a {
-    display: inline-block;
-    color: #fff;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .topnav a:hover {
-    background-color: #00172d;
-  }
-  
-  .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-    background-color: #ffffffd9;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card {
-    border: 1px solid #ddd;
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    overflow: hidden;
-  }
-  
-  .card-logo {
-    width: 140px;       /* largeur fixe uniforme */
-    height: auto;       /* garde les proportions */
-    object-fit: contain;
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
-  }
-  .cert-card {
-  background: #fff;
-  border: 1px solid #e8e8e8;
-  border-radius: 12px;
-  padding: 18px 22px;
-  margin: 18px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, .04);
+  font-family: var(--font-body);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
-.cert-grid {
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* Navigation */
+.topnav {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
   display: flex;
-  gap: 24px;
-  align-items: center; /* aligne verticalement */
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
 }
 
-/* Colonne logo marque */
-.cert-brand {
-  flex: 0 0 160px;
+.nav-brand {
+  font-family: var(--font-heading);
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: #fff;
+  border-bottom-color: var(--secondary-color);
+  text-decoration: none;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Layout */
+.container {
+  max-width: var(--container-width);
+  margin: 40px auto;
+  padding: 0 20px;
+  min-height: 80vh;
+}
+
+/* Hero Section (for Home) */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--light-text);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Cards */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 25px;
+  margin-bottom: 25px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column; /* Default to column, can be row for specific layouts */
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  border-color: #d0d0d0;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.card p {
+  margin-bottom: 15px;
+  color: var(--light-text);
+  font-size: 0.95rem;
+}
+
+.card-meta {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* Specific Card Layouts */
+.project-card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.card-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.card-content {
+  flex: 1;
+}
+
+/* Buttons & Links */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 3px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-sm {
+  padding: 4px 10px;
+  font-size: 0.8rem;
+}
+
+/* Footer */
+footer {
+  background-color: #f0f0f0;
+  color: var(--light-text);
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.9rem;
+}
+
+/* Certifications Grid */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.cert-card {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cert-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
 }
+
 .cert-brand img {
-  width: 140px;
-  height: auto;
-  display: block;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
 
-/* Bloc texte */
 .cert-body {
-  flex: 1 1 auto;
+  flex: 1;
 }
+
 .cert-title {
-  font-weight: 700;
-  font-size: 1.2rem;
-  margin: 0 0 6px 0;
-  line-height: 1.25;
-}
-.cert-desc {
-  margin: 0 0 6px 0;
-  font-size: .95rem;
-  color: #333;
-}
-.cert-code {
-  margin: 0 0 10px 0;
-  font-size: .82rem;
-  font-style: italic;
-  color: #666;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--primary-color);
 }
 
-/* Colonne image certificat */
-.cert-media {
-  flex: 0 0 180px;
-}
-.cert-media img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border: 1px solid #eee;
-  border-radius: 6px;
+.cert-issuer {
+  font-size: 0.9rem;
+  color: var(--light-text);
+  margin-bottom: 10px;
 }
 
-/* Responsive mobile */
-@media (max-width: 780px) {
-  .cert-grid {
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hidden by default on mobile, would need JS for toggle */
+    /* For simple CSS only version, we might want to stack them or keep them simple */
+  }
+  
+  /* Simple mobile nav fallback without JS */
+  .nav-container {
     flex-direction: column;
-    align-items: flex-start;
+    height: auto;
+    padding: 10px 0;
   }
-  .cert-brand {
-    align-self: flex-start;
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
   }
-  .cert-media {
-    width: 100%;
+  
+  .project-card {
+    flex-direction: column;
+  }
+  
+  .card-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
   }
 }

@@ -1,55 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio académique – Karl Loyau</title>
+  <title>Karl Loyau – Portfolio Académique</title>
   <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
+
   <nav class="topnav">
-    <a href="/index.html">Accueil</a>
-    <a href="/publications.html">Publications</a>
-    <a href="/certifications.html">Certifications</a>
-    <a href="/cv.html">CV</a>
-    <a href="/parcours.html">Parcours</a>
-    <a href="/recommandations.html">Recommandations</a>
-    <a href="/liens.html">Liens</a>
+    <div class="nav-container">
+      <a href="/index.html" class="nav-brand">Karl Loyau</a>
+      <div class="nav-links">
+        <a href="/index.html" class="active">Accueil</a>
+        <a href="/publications.html">Publications</a>
+        <a href="/certifications.html">Certifications</a>
+        <a href="/cv.html">CV</a>
+        <a href="/parcours.html">Parcours</a>
+        <a href="/recommandations.html">Recommandations</a>
+        <a href="/liens.html">Liens</a>
+      </div>
+    </div>
   </nav>
 
+  <header class="hero">
+    <div class="container" style="margin: 0 auto; min-height: auto;">
+      <h1>Karl Loyau</h1>
+      <p>Étudiant en Informatique & Mathématiques Appliquées</p>
+      <p style="font-size: 1rem; margin-top: 10px;">Spécialisé en Cryptographie Post-Quantique et Sécurité des Systèmes
+      </p>
+    </div>
+  </header>
+
   <div class="container">
-    <h1>Portfolio académique – Karl Loyau</h1>
 
-    <div class="card">
-      <img src="/assets/logo_lvmh.png" class="card-logo">
-      <h3>🧩 Addendum I – Transition post‑NISQ</h3>
-      <p>Feuille de route cryptographique pour systèmes commerciaux.</p>
-      <a href="./rapport-stage/rapport_stage.pdf">📄 Lire l’addendum (PDF)</a>
-    </div>
+    <section>
+      <h2 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; margin-bottom: 30px;">Travaux
+        Récents</h2>
 
-    <div class="card">
-      <img src="/assets/logo_bonmarche.png" class="card-logo">
-      <h3>🖥️ Rapport IT – Le Bon Marché</h3>
-      <p>Audit interconnexion des modules SaaS, cartographie du SI.</p>
-      <a href="./rapport-stage/rapport_stage.pdf">📄 Lire le rapport (PDF)</a>
-    </div>
-
-    <div class="card">
-        <img src="/assets/logo_uga.png" class="card-logo">
-        <h3>📘 Mémoire de L2 – Algèbre & Informatique Quantique</h3>
-        <em>Karl Loyau & Alexandra Militan-Mocanu</em><br>
-        <em><b>Algebraic Framework for Characterization of Mixed States in Quantum Computing Systems</em></b>.<br>
-        Zenodo. <a href="https://doi.org/10.5281/zenodo.16748188" target="_blank">https://doi.org/10.5281/zenodo.16748188</a></p>
-        <a href="https://doi.org/10.5281/zenodo.16748188" target="_blank">📄 Lire en Ligne</a>
+      <div class="card project-card">
+        <img src="/assets/logo_lvmh.png" class="card-logo" alt="LVMH Logo">
+        <div class="card-content">
+          <h3>Addendum I – Transition post‑NISQ</h3>
+          <div class="card-meta">Stage • LVMH</div>
+          <p>Feuille de route cryptographique pour systèmes commerciaux face aux menaces quantiques. Analyse des
+            standards NIST et recommandations d'implémentation.</p>
+          <a href="./rapport-stage/rapport_stage.pdf" class="btn btn-sm">📄 Lire l’addendum (PDF)</a>
+        </div>
       </div>
 
-    <div class="card">
-      <img src="/assets/logo_tum.png" class="card-logo">
-      <h3>📕 Thèse L3 – Codage MDPC post-quantique</h3>
-      <p>Structure et sécurité post-NISQ des codes quasi-cycliques MDPC.</p>
-      <a href="./these-mdpc/mdpc.pdf">📄 Lire la thèse (PDF)</a>
-    </div>
+      <div class="card project-card">
+        <img src="/assets/logo_bonmarche.png" class="card-logo" alt="Le Bon Marché Logo">
+        <div class="card-content">
+          <h3>Rapport IT – Le Bon Marché</h3>
+          <div class="card-meta">Audit Technique</div>
+          <p>Audit d'interconnexion des modules SaaS et cartographie complète du Système d'Information. Identification
+            des flux critiques et optimisation de l'architecture.</p>
+          <a href="./rapport-stage/rapport_stage.pdf" class="btn btn-sm">📄 Lire le rapport (PDF)</a>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <img src="/assets/logo_uga.png" class="card-logo" alt="UGA Logo">
+        <div class="card-content">
+          <h3>Mémoire de L2 – Algèbre & Informatique Quantique</h3>
+          <div class="card-meta">Recherche • Université Grenoble Alpes</div>
+          <p><em>Algebraic Framework for Characterization of Mixed States in Quantum Computing Systems</em>. Co-écrit
+            avec Alexandra Militan-Mocanu.</p>
+          <p style="font-size: 0.85rem;">DOI: <a href="https://doi.org/10.5281/zenodo.16748188"
+              target="_blank">10.5281/zenodo.16748188</a></p>
+          <a href="https://doi.org/10.5281/zenodo.16748188" target="_blank" class="btn btn-sm">📄 Lire en Ligne</a>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <img src="/assets/logo_tum.png" class="card-logo" alt="TUM Logo">
+        <div class="card-content">
+          <h3>Thèse L3 – Codage MDPC post-quantique</h3>
+          <div class="card-meta">Thèse de Bachelor</div>
+          <p>Structure et sécurité post-NISQ des codes quasi-cycliques MDPC (Moderate Density Parity Check). Étude des
+            attaques par décodage itératif.</p>
+          <a href="./these-mdpc/mdpc.pdf" class="btn btn-sm">📄 Lire la thèse (PDF)</a>
+        </div>
+      </div>
+
+    </section>
 
   </div>
+
+  <footer>
+    <p>&copy; 2025 Karl Loyau. Tous droits réservés.</p>
+  </footer>
+
 </body>
+
 </html>
