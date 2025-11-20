@@ -1,77 +1,111 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="UTF-8"><title>Parcours</title>
-<link rel="stylesheet" href="/css/style.css"></head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcours – Karl Loyau</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+</head>
+
 <body>
-    <nav class="topnav">
+
+  <nav class="topnav">
+    <div class="nav-container">
+      <a href="/index.html" class="nav-brand">Karl Loyau</a>
+      <div class="nav-links">
         <a href="/index.html">Accueil</a>
         <a href="/publications.html">Publications</a>
         <a href="/certifications.html">Certifications</a>
         <a href="/cv.html">CV</a>
-        <a href="/parcours.html">Parcours</a>
+        <a href="/parcours.html" class="active">Parcours</a>
         <a href="/recommandations.html">Recommandations</a>
         <a href="/liens.html">Liens</a>
-      </nav>
-<div class="container">
-<h1>🎓 Parcours académique</h1>
-  <div class="cert-card">
-  <div class="cert-grid">
-    <div class="cert-brand">
-      <img src="/assets/logos/TUM.png" alt="TUM">
-    </div>
-    <div class="cert-body">
-      <div class="cert-title">Université Technique de Munich</div>
-      <div class="cert-desc">
-        Programme d'échange en Mathématiques avancés.
       </div>
-      <div class="cert-code">2025-2026</div>
     </div>
-  </div>
-</div>
+  </nav>
 
-  <div class="cert-card">
-  <div class="cert-grid">
-    <div class="cert-brand">
-      <img src="/assets/logos/TUM.png" alt="TUM">
-    </div>
-    <div class="cert-body">
-      <div class="cert-title">Stage Le Bon Marché - LVMH</div>
-      <div class="cert-desc">
-        Programme d'échange en Mathématiques avancés.
-      </div>
-      <div class="cert-code">2025-2026</div>
-    </div>
-  </div>
-</div>
+  <div class="container">
+    <h1 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; margin-bottom: 30px;">Parcours
+      Académique & Professionnel</h1>
 
-  <div class="cert-card">
-  <div class="cert-grid">
-    <div class="cert-brand">
-      <img src="/assets/logos/TUM.png" alt="TUM">
-    </div>
-    <div class="cert-body">
-      <div class="cert-title">Université Grenoble Alpes</div>
-      <div class="cert-desc">
-        Programme d'échange en Mathématiques avancés.
-      </div>
-      <div class="cert-code">2025-2026</div>
-    </div>
-  </div>
-</div>
+    <div class="cert-grid">
 
-  <div class="cert-card">
-  <div class="cert-grid">
-    <div class="cert-brand">
-      <img src="/assets/logos/TUM.png" alt="TUM">
-    </div>
-    <div class="cert-body">
-      <div class="cert-title">Cité Scolaire Internationale Honoré de Balzac</div>
-      <div class="cert-desc">
-        Programme d'échange en Mathématiques avancés.
+      <div class="cert-card">
+        <div class="cert-header">
+          <div class="cert-brand">
+            <img src="/assets/logos/TUM.png" alt="TUM">
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">Université Technique de Munich</div>
+            <div class="cert-issuer">2025-2026</div>
+          </div>
+        </div>
+        <div class="cert-desc">
+          Programme d'échange en Mathématiques avancés.
+        </div>
       </div>
-      <div class="cert-code">2025-2026</div>
+
+      <div class="cert-card">
+        <div class="cert-header">
+          <div class="cert-brand">
+            <img src="/assets/logos/LVMH.png" alt="LVMH">
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">Stage Le Bon Marché - LVMH</div>
+            <div class="cert-issuer">2025</div>
+          </div>
+        </div>
+        <div class="cert-desc">
+          Stage en IT et Cybersécurité.
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-header">
+          <div class="cert-brand">
+            <img src="/assets/logos/uga.png" alt="UGA">
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">Université Grenoble Alpes</div>
+            <div class="cert-issuer">2023-2025</div>
+          </div>
+        </div>
+        <div class="cert-desc">
+          Licence en Mathématiques et Informatique.
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-header">
+          <div class="cert-brand">
+            <!-- Placeholder logo if specific one not available, using generic or re-using TUM/UGA if appropriate, or just text -->
+            <span style="font-size: 2rem;">🏫</span>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">Cité Scolaire Internationale Honoré de Balzac</div>
+            <div class="cert-issuer">2020-2023</div>
+          </div>
+        </div>
+        <div class="cert-desc">
+          Baccalauréat Général, Mention Très Bien.
+        </div>
+      </div>
+
     </div>
   </div>
-</div>
+
+  <footer>
+    <p>&copy; 2025 Karl Loyau. Tous droits réservés.</p>
+  </footer>
+
 </body>
+
 </html>

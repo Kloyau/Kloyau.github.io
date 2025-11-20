@@ -1,24 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="UTF-8"><title>Liens</title>
-<link rel="stylesheet" href="/css/style.css"></head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liens – Karl Loyau</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+</head>
+
 <body>
-    <nav class="topnav">
+
+  <nav class="topnav">
+    <div class="nav-container">
+      <a href="/index.html" class="nav-brand">Karl Loyau</a>
+      <div class="nav-links">
         <a href="/index.html">Accueil</a>
         <a href="/publications.html">Publications</a>
         <a href="/certifications.html">Certifications</a>
         <a href="/cv.html">CV</a>
         <a href="/parcours.html">Parcours</a>
         <a href="/recommandations.html">Recommandations</a>
-        <a href="/liens.html">Liens</a>
-      </nav>
-<div class="container">
-<h1>🔗 Liens utiles</h1>
-<ul>
-  <li><a href="https://github.com/karl-loyau">GitHub</a></li>
-  <li><a href="https://linkedin.com/in/karl-loyau">LinkedIn</a></li>
-  <li><a href="https://orcid.org">ORCID</a></li>
-</ul>
-</div>
+        <a href="/liens.html" class="active">Liens</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; margin-bottom: 30px;">Liens Utiles
+    </h1>
+
+    <div class="cert-grid">
+
+      <a href="https://github.com/karl-loyau" target="_blank" class="cert-card"
+        style="text-decoration: none; color: inherit; transition: transform 0.2s;">
+        <div class="cert-header">
+          <div class="cert-brand">
+            <span style="font-size: 2rem;">💻</span>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">GitHub</div>
+            <div class="cert-desc">Projets de code et contributions open source.</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://linkedin.com/in/karl-loyau" target="_blank" class="cert-card"
+        style="text-decoration: none; color: inherit; transition: transform 0.2s;">
+        <div class="cert-header">
+          <div class="cert-brand">
+            <span style="font-size: 2rem;">👔</span>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">LinkedIn</div>
+            <div class="cert-desc">Profil professionnel et réseau.</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://orcid.org" target="_blank" class="cert-card"
+        style="text-decoration: none; color: inherit; transition: transform 0.2s;">
+        <div class="cert-header">
+          <div class="cert-brand">
+            <span style="font-size: 2rem;">🆔</span>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">ORCID</div>
+            <div class="cert-desc">Identifiant chercheur et publications.</div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Karl Loyau. Tous droits réservés.</p>
+  </footer>
+
 </body>
+
 </html>
