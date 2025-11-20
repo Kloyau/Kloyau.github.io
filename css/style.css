@@ -5,18 +5,20 @@
 
 :root {
   /* Color Palette */
-  --primary-color: #0a1f3d; /* Deep Navy Blue */
-  --secondary-color: #b31b1b; /* Academic Red/Crimson accent */
+  --primary-color: #0a1f3d;
+  /* Deep Navy Blue */
+  --secondary-color: #b31b1b;
+  /* Academic Red/Crimson accent */
   --text-color: #333333;
   --light-text: #666666;
   --background-color: #f9f9f9;
   --card-bg: #ffffff;
   --border-color: #e0e0e0;
-  
+
   /* Typography */
   --font-heading: 'Merriweather', serif;
   --font-body: 'Inter', sans-serif;
-  
+
   /* Spacing */
   --container-width: 1000px;
   --spacing-unit: 1rem;
@@ -37,7 +39,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   color: var(--primary-color);
   margin-top: 0;
@@ -59,7 +66,7 @@ a:hover {
   background-color: var(--primary-color);
   color: #fff;
   padding: 0 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -88,7 +95,7 @@ a:hover {
 }
 
 .nav-links a {
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
@@ -97,7 +104,8 @@ a:hover {
   transition: all 0.2s ease;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
   color: #fff;
   border-bottom-color: var(--secondary-color);
   text-decoration: none;
@@ -149,12 +157,13 @@ a:hover {
   margin-bottom: 25px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
-  flex-direction: column; /* Default to column, can be row for specific layouts */
+  flex-direction: column;
+  /* Default to column, can be row for specific layouts */
 }
 
 .card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
   border-color: #d0d0d0;
 }
 
@@ -285,17 +294,18 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* Hidden by default on mobile, would need JS for toggle */
+    display: none;
+    /* Hidden by default on mobile, would need JS for toggle */
     /* For simple CSS only version, we might want to stack them or keep them simple */
   }
-  
+
   /* Simple mobile nav fallback without JS */
   .nav-container {
     flex-direction: column;
     height: auto;
     padding: 10px 0;
   }
-  
+
   .nav-links {
     display: flex;
     flex-wrap: wrap;
@@ -303,14 +313,93 @@ footer {
     margin-top: 10px;
     gap: 10px;
   }
-  
+
   .project-card {
     flex-direction: column;
   }
-  
+
   .card-logo {
     width: 60px;
     height: 60px;
     margin-bottom: 10px;
   }
 }
+
+/* Timeline Component */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: var(--border-color);
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  /* Adjust for mobile/desktop */
+  margin-left: -1px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 50px;
+}
+
+.timeline-marker {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  background-color: #fff;
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+  z-index: 1;
+  top: 5px;
+}
+
+.timeline-content {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.timeline-content:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.timeline-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+.timeline-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* Desktop adjustments for centered timeline if desired, keeping simple left-aligned for now for consistency */
