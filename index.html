@@ -4,130 +4,155 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karl Loyau – Portfolio Académique</title>
-  <link rel="stylesheet" href="/css/style.css">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
+  <title>Karl Loyau - Portfolio Académique</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <nav class="topnav">
+  <!-- Navigation -->
+  <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-brand">Karl Loyau</a>
-      <div class="nav-links">
-        <a href="index.html" class="active">Accueil</a>
+      <a href="index.html" class="nav-brand">Karl <span>Loyau</span></a>
+
+      <div class="mobile-menu-btn" style="display:none; cursor:pointer; font-size:1.5rem;">☰</div>
+
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link active">Accueil</a>
 
         <div class="dropdown">
-          <span class="dropbtn">Parcours ▾</span>
-          <div class="dropdown-content">
-            <a href="parcours.html">Expérience & Formation</a>
-            <a href="cv.html">Curriculum Vitae</a>
+          <div class="nav-link" style="cursor:pointer;">Parcours</div>
+          <div class="dropdown-menu">
+            <a href="parcours.html" class="dropdown-item">Expérience & Formation</a>
+            <a href="cv.html" class="dropdown-item">Curriculum Vitae</a>
           </div>
         </div>
 
         <div class="dropdown">
-          <span class="dropbtn">Réalisations ▾</span>
-          <div class="dropdown-content">
-            <a href="publications.html">Publications</a>
-            <a href="certifications.html">Certifications</a>
+          <div class="nav-link" style="cursor:pointer;">Réalisations</div>
+          <div class="dropdown-menu">
+            <a href="publications.html" class="dropdown-item">Publications</a>
+            <a href="certifications.html" class="dropdown-item">Certifications</a>
           </div>
         </div>
 
         <div class="dropdown">
-          <span class="dropbtn">Réseau ▾</span>
-          <div class="dropdown-content">
-            <a href="recommandations.html">Recommandations</a>
-            <a href="liens.html">Liens Utiles</a>
+          <div class="nav-link" style="cursor:pointer;">Réseau</div>
+          <div class="dropdown-menu">
+            <a href="recommandations.html" class="dropdown-item">Recommandations</a>
+            <a href="liens.html" class="dropdown-item">Liens Utiles</a>
           </div>
         </div>
       </div>
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="container" style="margin: 0 auto; min-height: auto;">
-      <h1>Karl Loyau</h1>
-      <p>Étudiant en Informatique & Mathématiques Appliquées</p>
-      <p style="font-size: 1rem; margin-top: 10px;">Spécialisé en Cryptographie Post-Quantique et Sécurité des Systèmes
+  <!-- Cinematic Hero -->
+  <header class="hero-cinematic">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-subtitle reveal-text">Portfolio Académique & Professionnel</span>
+      <h1 class="reveal-text" style="transition-delay: 0.2s;">Ingénierie Logicielle <br>& <span
+          style="color: var(--crimson);">Sécurité Avancée</span></h1>
+      <p class="reveal-text" style="transition-delay: 0.4s; margin: 0 auto 2.5rem;">
+        Spécialiste en Cryptographie Post-Quantique et architectures sécurisées.
+        Une approche rigoureuse de la technologie au service de l'innovation.
       </p>
+      <div class="reveal-text" style="transition-delay: 0.6s;">
+        <a href="parcours.html" class="btn-magnetic">Découvrir mon Parcours</a>
+        <a href="cv.html" class="btn-magnetic btn-outline" style="margin-left: 1rem;">Consulter le CV</a>
+      </div>
     </div>
   </header>
 
-  <div class="container">
+  <!-- Editorial Section: Skills -->
+  <section class="section-editorial">
+    <div class="container">
+      <div class="editorial-grid">
+        <div class="col-text reveal-text">
+          <span class="card-meta">Expertise Technique</span>
+          <h2>Maîtrise & <br>Compétences</h2>
+          <p>Une expertise approfondie dans les domaines critiques de l'informatique moderne, alliant théorie
+            mathématique et application industrielle.</p>
 
-    <section>
-      <h2 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; margin-bottom: 30px;">Travaux
-        Récents</h2>
+          <div style="margin-top: 2rem;">
+            <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Sécurité & Cryptographie</h4>
+            <p style="font-size: 1rem; margin-bottom: 1.5rem;">Post-Quantum Cryptography (PQC), Zero-Knowledge Proofs,
+              Protocoles Sécurisés.</p>
 
-      <div class="card project-card animate-on-scroll">
-        <div class="card-logo-container">
-          <img src="assets/logos/LVMH.png" class="card-logo" alt="LVMH Logo">
-        </div>
-        <div class="card-content">
-          <h3>Addendum I – Transition post‑NISQ</h3>
-          <div class="card-meta">Stage • LVMH</div>
-          <p>Feuille de route cryptographique pour systèmes commerciaux face aux menaces quantiques. Analyse des
-            standards NIST et recommandations d'implémentation.</p>
-          <a href="./rapport-stage/rapport_stage.pdf" class="btn btn-sm">📄 Lire l’addendum (PDF)</a>
-        </div>
-      </div>
+            <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Développement Système</h4>
+            <p style="font-size: 1rem; margin-bottom: 1.5rem;">Rust, C++, Go. Optimisation bas niveau et sécurité
+              mémoire.</p>
 
-      <div class="card project-card animate-on-scroll" style="transition-delay: 0.1s;">
-        <div class="card-logo-container">
-          <img src="assets/logos/BonMarche.png" class="card-logo" alt="Le Bon Marché Logo">
+            <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Architecture Cloud</h4>
+            <p style="font-size: 1rem;">Kubernetes, AWS, CI/CD Pipelines, Infrastructure as Code.</p>
+          </div>
         </div>
-        <div class="card-content">
-          <h3>Rapport IT – Le Bon Marché</h3>
-          <div class="card-meta">Audit Technique</div>
-          <p>Audit d'interconnexion des modules SaaS et cartographie complète du Système d'Information. Identification
-            des flux critiques et optimisation de l'architecture.</p>
-          <a href="./rapport-stage/rapport_stage.pdf" class="btn btn-sm">📄 Lire le rapport (PDF)</a>
-        </div>
-      </div>
-
-      <div class="card project-card animate-on-scroll" style="transition-delay: 0.2s;">
-        <div class="card-logo-container">
-          <img src="assets/logos/uga.png" class="card-logo" alt="UGA Logo">
-        </div>
-        <div class="card-content">
-          <h3>Mémoire de L2 – Algèbre & Informatique Quantique</h3>
-          <div class="card-meta">Recherche • Université Grenoble Alpes</div>
-          <p><em>Algebraic Framework for Characterization of Mixed States in Quantum Computing Systems</em>. Co-écrit
-            avec Alexandra Militan-Mocanu.</p>
-          <p style="font-size: 0.85rem;">DOI: <a href="https://doi.org/10.5281/zenodo.16748188"
-              target="_blank">10.5281/zenodo.16748188</a></p>
-          <a href="https://doi.org/10.5281/zenodo.16748188" target="_blank" class="btn btn-sm">📄 Lire en Ligne</a>
+        <div class="col-image reveal-text" style="transition-delay: 0.3s;">
+          <!-- Placeholder for abstract tech visualization -->
+          <div
+            style="width: 100%; height: 500px; background: var(--charcoal); display: flex; align-items: center; justify-content: center; color: var(--ivory);">
+            <span style="font-family: var(--font-serif); font-style: italic; font-size: 2rem;">Excellence
+              Technique</span>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="card project-card animate-on-scroll" style="transition-delay: 0.3s;">
-        <div class="card-logo-container">
-          <img src="assets/logos/TUM.svg" class="card-logo" alt="TUM Logo">
-        </div>
-        <div class="card-content">
-          <h3>Thèse L3 – Codage MDPC post-quantique</h3>
-          <div class="card-meta">Thèse de Bachelor</div>
-          <p>Structure et sécurité post-NISQ des codes quasi-cycliques MDPC (Moderate Density Parity Check). Étude des
-            attaques par décodage itératif.</p>
-          <a href="./these-mdpc/mdpc.pdf" class="btn btn-sm">📄 Lire la thèse (PDF)</a>
-        </div>
+  <!-- Editorial Section: Featured Work -->
+  <section class="section-editorial" style="background: var(--paper);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <span class="card-meta reveal-text">Sélection de Travaux</span>
+        <h2 class="reveal-text">Projets & Recherche</h2>
       </div>
 
-    </section>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
 
-  </div>
+        <article class="card-editorial reveal-text">
+          <img src="assets/logos/TUM.png" alt="TUM" class="card-logo">
+          <span class="card-meta">Recherche • 2024</span>
+          <h3>Post-Quantum Signatures</h3>
+          <p>Analyse comparative approfondie des algorithmes Dilithium et Falcon. Étude de performance et de résistance
+            aux attaques par canaux auxiliaires.</p>
+          <a href="publications.html"
+            style="font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Lire la
+            publication →</a>
+        </article>
 
-  <footer>
-    <p>&copy; 2025 Karl Loyau. Tous droits réservés.</p>
+        <article class="card-editorial reveal-text" style="transition-delay: 0.2s;">
+          <img src="assets/logos/GitHub.png" alt="GitHub" class="card-logo">
+          <span class="card-meta">Développement • 2025</span>
+          <h3>Agentic Portfolio</h3>
+          <p>Conception d'une plateforme web personnelle utilisant des agents IA avancés pour le développement et le
+            déploiement continu.</p>
+          <a href="https://github.com/Kloyau"
+            style="font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Voir le code
+            source →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-prestigious">
+    <div class="container">
+      <div class="footer-logo">Karl <span>Loyau</span></div>
+      <div class="footer-links">
+        <a href="https://github.com/Kloyau">GitHub</a>
+        <a href="https://linkedin.com/in/karl-loyau">LinkedIn</a>
+        <a href="mailto:contact@karlloyau.com">Email</a>
+        <a href="assets/cv.pdf">Curriculum Vitae</a>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Karl Loyau. Tous droits réservés. <br>Conçu avec excellence académique.
+      </div>
+    </div>
   </footer>
 
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

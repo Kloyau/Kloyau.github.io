@@ -4,136 +4,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parcours – Karl Loyau</title>
-  <link rel="stylesheet" href="/css/style.css">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
+  <title>Mon Parcours - Karl Loyau</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <nav class="topnav">
+  <!-- Navigation -->
+  <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-brand">Karl Loyau</a>
-      <div class="nav-links">
-        <a href="index.html">Accueil</a>
-
+      <a href="index.html" class="nav-brand">Karl <span>Loyau</span></a>
+      <div class="mobile-menu-btn" style="display:none; cursor:pointer; font-size:1.5rem;">☰</div>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Accueil</a>
         <div class="dropdown">
-          <span class="dropbtn active">Parcours ▾</span>
-          <div class="dropdown-content">
-            <a href="parcours.html" class="active">Expérience & Formation</a>
-            <a href="cv.html">Curriculum Vitae</a>
+          <div class="nav-link active" style="cursor:pointer;">Parcours</div>
+          <div class="dropdown-menu">
+            <a href="parcours.html" class="dropdown-item">Expérience & Formation</a>
+            <a href="cv.html" class="dropdown-item">Curriculum Vitae</a>
           </div>
         </div>
-
         <div class="dropdown">
-          <span class="dropbtn">Réalisations ▾</span>
-          <div class="dropdown-content">
-            <a href="publications.html">Publications</a>
-            <a href="certifications.html">Certifications</a>
+          <div class="nav-link" style="cursor:pointer;">Réalisations</div>
+          <div class="dropdown-menu">
+            <a href="publications.html" class="dropdown-item">Publications</a>
+            <a href="certifications.html" class="dropdown-item">Certifications</a>
           </div>
         </div>
-
         <div class="dropdown">
-          <span class="dropbtn">Réseau ▾</span>
-          <div class="dropdown-content">
-            <a href="recommandations.html">Recommandations</a>
-            <a href="liens.html">Liens Utiles</a>
+          <div class="nav-link" style="cursor:pointer;">Réseau</div>
+          <div class="dropdown-menu">
+            <a href="recommandations.html" class="dropdown-item">Recommandations</a>
+            <a href="liens.html" class="dropdown-item">Liens Utiles</a>
           </div>
         </div>
       </div>
     </div>
   </nav>
 
-  <div class="container">
-    <h1 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; margin-bottom: 40px;">Parcours
-      Académique & Professionnel</h1>
-
-    <div class="timeline">
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-logo-container">
-            <img src="assets/logos/TUM.svg" alt="TUM Logo" class="timeline-logo">
-          </div>
-          <div class="timeline-body">
-            <div class="timeline-date">2025 - 2026</div>
-            <div class="timeline-title">Université Technique de Munich (TUM)</div>
-            <div class="timeline-subtitle">Programme d'échange en Mathématiques avancés</div>
-            <div class="timeline-desc">
-              Spécialisation en cryptographie et algorithmique quantique. Participation à des séminaires de recherche
-              avancée et projets collaboratifs internationaux.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-logo-container">
-            <img src="assets/logos/LVMH.png" alt="LVMH Logo" class="timeline-logo">
-          </div>
-          <div class="timeline-body">
-            <div class="timeline-date">2025</div>
-            <div class="timeline-title">Stage Le Bon Marché - LVMH</div>
-            <div class="timeline-subtitle">IT & Cybersécurité</div>
-            <div class="timeline-desc">
-              Audit d'interconnexion des modules SaaS et cartographie du Système d'Information. Identification des flux
-              critiques et optimisation de l'architecture de sécurité.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-logo-container">
-            <img src="assets/logos/uga.png" alt="UGA Logo" class="timeline-logo">
-          </div>
-          <div class="timeline-body">
-            <div class="timeline-date">2023 - 2025</div>
-            <div class="timeline-title">Université Grenoble Alpes</div>
-            <div class="timeline-subtitle">Licence en Mathématiques et Informatique</div>
-            <div class="timeline-desc">
-              Formation double cursus avec mention. Projets académiques en algèbre, analyse et programmation système.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-logo-container">
-            <img src="assets/logos/Balzac.png" alt="Cité Scolaire Internationale Logo" class="timeline-logo">
-          </div>
-          <div class="timeline-body">
-            <div class="timeline-date">2020 - 2023</div>
-            <div class="timeline-title">Cité Scolaire Internationale Honoré de Balzac</div>
-            <div class="timeline-subtitle">Baccalauréat Général</div>
-            <div class="timeline-desc">
-              Mention Très Bien. Spécialités Mathématiques et Physique-Chimie. Section internationale.
-            </div>
-          </div>
-        </div>
-      </div>
-
+  <!-- Page Hero -->
+  <header class="hero-cinematic" style="height: 60vh;">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-subtitle reveal-text">Trajectoire Académique</span>
+      <h1 class="reveal-text">Parcours d'Excellence</h1>
     </div>
-  </div>
+  </header>
 
-  <footer>
-    <p>&copy; 2025 Karl Loyau. Tous droits réservés.</p>
+  <!-- Main Content -->
+  <section class="section-editorial">
+    <div class="container">
+      <div class="timeline-elegant">
+
+        <!-- TUM -->
+        <div class="timeline-node reveal-text">
+          <span class="timeline-year">2024 - 2025</span>
+          <h3>Technical University of Munich</h3>
+          <h4 style="font-family: var(--font-sans); font-size: 1.1rem; color: var(--slate); margin-bottom: 1rem;">Master
+            of Science - Informatique</h4>
+          <p>Spécialisation en Ingénierie Logicielle et Sécurité. Échange académique au sein de l'une des meilleures
+            universités techniques d'Europe.</p>
+          <img src="assets/logos/TUM.png" alt="TUM" style="width: 60px; margin-top: 1rem;">
+        </div>
+
+        <!-- Sapienza -->
+        <div class="timeline-node reveal-text">
+          <span class="timeline-year">2023 - 2024</span>
+          <h3>Sapienza Università di Roma</h3>
+          <h4 style="font-family: var(--font-sans); font-size: 1.1rem; color: var(--slate); margin-bottom: 1rem;">Master
+            of Science - Cybersécurité</h4>
+          <p>Focus approfondi sur la cryptographie appliquée, la sécurité des réseaux et l'analyse de malwares.</p>
+          <img src="assets/logos/Sapienza.png" alt="Sapienza" style="width: 60px; margin-top: 1rem;">
+        </div>
+
+        <!-- Sorbonne -->
+        <div class="timeline-node reveal-text">
+          <span class="timeline-year">2022 - 2023</span>
+          <h3>Sorbonne Université</h3>
+          <h4 style="font-family: var(--font-sans); font-size: 1.1rem; color: var(--slate); margin-bottom: 1rem;">
+            Licence - Informatique</h4>
+          <p>Formation fondamentale en informatique : algorithmique avancée, structures de données et mathématiques
+            discrètes.</p>
+          <img src="assets/logos/uga.png" alt="Sorbonne" style="width: 60px; margin-top: 1rem;">
+        </div>
+
+        <!-- Balzac -->
+        <div class="timeline-node reveal-text">
+          <span class="timeline-year">2019 - 2022</span>
+          <h3>Lycée Honoré de Balzac</h3>
+          <h4 style="font-family: var(--font-sans); font-size: 1.1rem; color: var(--slate); margin-bottom: 1rem;">
+            Baccalauréat Général</h4>
+          <p>Spécialités Mathématiques et Physique-Chimie. Mention Très Bien avec Félicitations du Jury.</p>
+          <img src="assets/logos/Balzac.png" alt="Balzac" style="width: 60px; margin-top: 1rem;">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-prestigious">
+    <div class="container">
+      <div class="footer-logo">Karl <span>Loyau</span></div>
+      <div class="footer-links">
+        <a href="https://github.com/Kloyau">GitHub</a>
+        <a href="https://linkedin.com/in/karl-loyau">LinkedIn</a>
+        <a href="mailto:contact@karlloyau.com">Email</a>
+        <a href="assets/cv.pdf">Curriculum Vitae</a>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Karl Loyau. Tous droits réservés.
+      </div>
+    </div>
   </footer>
 
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

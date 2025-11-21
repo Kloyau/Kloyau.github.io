@@ -4,105 +4,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liens – Karl Loyau</title>
-  <link rel="stylesheet" href="/css/style.css">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
+  <title>Liens Utiles - Karl Loyau</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <nav class="topnav">
+  <!-- Navigation -->
+  <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-brand">Karl Loyau</a>
-      <div class="nav-links">
-        <a href="index.html">Accueil</a>
-
+      <a href="index.html" class="nav-brand">Karl <span>Loyau</span></a>
+      <div class="mobile-menu-btn" style="display:none; cursor:pointer; font-size:1.5rem;">☰</div>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Accueil</a>
         <div class="dropdown">
-          <span class="dropbtn">Parcours ▾</span>
-          <div class="dropdown-content">
-            <a href="parcours.html">Expérience & Formation</a>
-            <a href="cv.html">Curriculum Vitae</a>
+          <div class="nav-link" style="cursor:pointer;">Parcours</div>
+          <div class="dropdown-menu">
+            <a href="parcours.html" class="dropdown-item">Expérience & Formation</a>
+            <a href="cv.html" class="dropdown-item">Curriculum Vitae</a>
           </div>
         </div>
-
         <div class="dropdown">
-          <span class="dropbtn">Réalisations ▾</span>
-          <div class="dropdown-content">
-            <a href="publications.html">Publications</a>
-            <a href="certifications.html">Certifications</a>
+          <div class="nav-link" style="cursor:pointer;">Réalisations</div>
+          <div class="dropdown-menu">
+            <a href="publications.html" class="dropdown-item">Publications</a>
+            <a href="certifications.html" class="dropdown-item">Certifications</a>
           </div>
         </div>
-
         <div class="dropdown">
-          <span class="dropbtn active">Réseau ▾</span>
-          <div class="dropdown-content">
-            <a href="recommandations.html">Recommandations</a>
-            <a href="liens.html" class="active">Liens Utiles</a>
+          <div class="nav-link active" style="cursor:pointer;">Réseau</div>
+          <div class="dropdown-menu">
+            <a href="recommandations.html" class="dropdown-item">Recommandations</a>
+            <a href="liens.html" class="dropdown-item">Liens Utiles</a>
           </div>
         </div>
       </div>
     </div>
   </nav>
 
-  <div class="container">
-    <h1 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; margin-bottom: 30px;">Liens Utiles
-    </h1>
-
-    <div class="cert-grid">
-
-      <a href="https://github.com/karl-loyau" target="_blank" class="cert-card"
-        style="text-decoration: none; color: inherit; transition: transform 0.2s;">
-        <div class="cert-header">
-          <div class="cert-brand">
-            <img src="assets/logos/GitHub.png" alt="GitHub" style="width: 100%; height: 100%; object-fit: contain;">
-          </div>
-          <div class="cert-body">
-            <div class="cert-title">GitHub</div>
-            <div class="cert-desc">Projets de code et contributions open source.</div>
-          </div>
-        </div>
-      </a>
-
-      <a href="https://linkedin.com/in/karl-loyau" target="_blank" class="cert-card"
-        style="text-decoration: none; color: inherit; transition: transform 0.2s;">
-        <div class="cert-header">
-          <div class="cert-brand">
-            <img src="assets/logos/LinkedIn.png" alt="LinkedIn" style="width: 100%; height: 100%; object-fit: contain;">
-          </div>
-          <div class="cert-body">
-            <div class="cert-title">LinkedIn</div>
-            <div class="cert-desc">Profil professionnel et réseau.</div>
-          </div>
-        </div>
-      </a>
-
-      <a href="https://orcid.org" target="_blank" class="cert-card"
-        style="text-decoration: none; color: inherit; transition: transform 0.2s;">
-        <div class="cert-header">
-          <div class="cert-brand">
-            <img src="assets/logos/ORCID.png" alt="ORCID" style="width: 100%; height: 100%; object-fit: contain;">
-          </div>
-          <div class="cert-body">
-            <div class="cert-title">ORCID</div>
-            <div class="cert-desc">Identifiant chercheur et publications.</div>
-          </div>
-        </div>
-      </a>
-
+  <!-- Page Hero -->
+  <header class="hero-cinematic" style="height: 60vh;">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-subtitle reveal-text">Connexions</span>
+      <h1 class="reveal-text">Liens Utiles</h1>
     </div>
-  </div>
+  </header>
 
-  <footer>
-    <p>&copy; 2025 Karl Loyau. Tous droits réservés.</p>
+  <!-- Main Content -->
+  <section class="section-editorial">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+        <a href="https://github.com/Kloyau" class="card-editorial reveal-text"
+          style="display: flex; align-items: center; gap: 1.5rem; padding: 2rem;">
+          <img src="assets/logos/GitHub.png" alt="GitHub"
+            style="width: 60px; height: 60px; object-fit: contain; margin: 0;">
+          <div>
+            <h3 style="margin: 0; font-size: 1.5rem;">GitHub</h3>
+            <p style="margin: 0; font-size: 0.9rem; color: var(--slate);">Projets Open-Source</p>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/in/karl-loyau" class="card-editorial reveal-text"
+          style="display: flex; align-items: center; gap: 1.5rem; padding: 2rem; transition-delay: 0.1s;">
+          <img src="assets/logos/LinkedIn.png" alt="LinkedIn"
+            style="width: 60px; height: 60px; object-fit: contain; margin: 0;">
+          <div>
+            <h3 style="margin: 0; font-size: 1.5rem;">LinkedIn</h3>
+            <p style="margin: 0; font-size: 0.9rem; color: var(--slate);">Réseau Professionnel</p>
+          </div>
+        </a>
+
+        <a href="https://orcid.org/" class="card-editorial reveal-text"
+          style="display: flex; align-items: center; gap: 1.5rem; padding: 2rem; transition-delay: 0.2s;">
+          <img src="assets/logos/ORCID.png" alt="ORCID"
+            style="width: 60px; height: 60px; object-fit: contain; margin: 0;">
+          <div>
+            <h3 style="margin: 0; font-size: 1.5rem;">ORCID</h3>
+            <p style="margin: 0; font-size: 0.9rem; color: var(--slate);">Identifiant Chercheur</p>
+          </div>
+        </a>
+
+        <a href="https://twitter.com/" class="card-editorial reveal-text"
+          style="display: flex; align-items: center; gap: 1.5rem; padding: 2rem; transition-delay: 0.3s;">
+          <img src="assets/logos/X.png" alt="X" style="width: 60px; height: 60px; object-fit: contain; margin: 0;">
+          <div>
+            <h3 style="margin: 0; font-size: 1.5rem;">X (Twitter)</h3>
+            <p style="margin: 0; font-size: 0.9rem; color: var(--slate);">Veille Technologique</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-prestigious">
+    <div class="container">
+      <div class="footer-logo">Karl <span>Loyau</span></div>
+      <div class="footer-links">
+        <a href="https://github.com/Kloyau">GitHub</a>
+        <a href="https://linkedin.com/in/karl-loyau">LinkedIn</a>
+        <a href="mailto:contact@karlloyau.com">Email</a>
+        <a href="assets/cv.pdf">Curriculum Vitae</a>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Karl Loyau. Tous droits réservés.
+      </div>
+    </div>
   </footer>
 
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

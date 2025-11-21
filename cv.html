@@ -4,141 +4,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV – Karl Loyau</title>
-  <link rel="stylesheet" href="/css/style.css">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
+  <title>Curriculum Vitae - Karl Loyau</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <nav class="topnav">
+  <!-- Navigation -->
+  <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-brand">Karl Loyau</a>
-      <div class="nav-links">
-        <a href="index.html">Accueil</a>
-
+      <a href="index.html" class="nav-brand">Karl <span>Loyau</span></a>
+      <div class="mobile-menu-btn" style="display:none; cursor:pointer; font-size:1.5rem;">☰</div>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Accueil</a>
         <div class="dropdown">
-          <span class="dropbtn active">Parcours ▾</span>
-          <div class="dropdown-content">
-            <a href="parcours.html">Expérience & Formation</a>
-            <a href="cv.html" class="active">Curriculum Vitae</a>
+          <div class="nav-link active" style="cursor:pointer;">Parcours</div>
+          <div class="dropdown-menu">
+            <a href="parcours.html" class="dropdown-item">Expérience & Formation</a>
+            <a href="cv.html" class="dropdown-item">Curriculum Vitae</a>
           </div>
         </div>
-
         <div class="dropdown">
-          <span class="dropbtn">Réalisations ▾</span>
-          <div class="dropdown-content">
-            <a href="publications.html">Publications</a>
-            <a href="certifications.html">Certifications</a>
+          <div class="nav-link" style="cursor:pointer;">Réalisations</div>
+          <div class="dropdown-menu">
+            <a href="publications.html" class="dropdown-item">Publications</a>
+            <a href="certifications.html" class="dropdown-item">Certifications</a>
           </div>
         </div>
-
         <div class="dropdown">
-          <span class="dropbtn">Réseau ▾</span>
-          <div class="dropdown-content">
-            <a href="recommandations.html">Recommandations</a>
-            <a href="liens.html">Liens Utiles</a>
+          <div class="nav-link" style="cursor:pointer;">Réseau</div>
+          <div class="dropdown-menu">
+            <a href="recommandations.html" class="dropdown-item">Recommandations</a>
+            <a href="liens.html" class="dropdown-item">Liens Utiles</a>
           </div>
         </div>
       </div>
     </div>
   </nav>
 
-  <div class="container">
-    <h1 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; margin-bottom: 40px;">Curriculum
-      Vitae</h1>
-
-    <div class="card"
-      style="text-align: center; padding: 40px; margin-bottom: 60px; border: 1px solid var(--primary-color); background: #fdfdfd;">
-      <p style="font-size: 1.2rem; margin-bottom: 30px; color: var(--primary-color); font-weight: 500;">
-        Vous pouvez consulter ou télécharger mon CV complet ci-dessous.
-      </p>
-
-      <a href="cv_karl_loyau.pdf" class="btn"
-        style="padding: 14px 28px; font-size: 1.1rem; background-color: var(--primary-color); color: #fff;">
-        📥 Télécharger le CV (PDF)
-      </a>
+  <!-- Page Hero -->
+  <header class="hero-cinematic" style="height: 60vh;">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-subtitle reveal-text">Document Officiel</span>
+      <h1 class="reveal-text">Curriculum Vitae</h1>
     </div>
+  </header>
 
-    <h2 style="margin-bottom: 40px; text-align: center; font-size: 1.8rem;">Expérience & Formation</h2>
+  <!-- Main Content -->
+  <section class="section-editorial">
+    <div class="container">
 
-    <div class="timeline">
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-logo-container">
-            <img src="assets/logos/TUM.svg" alt="TUM Logo" class="timeline-logo">
-          </div>
-          <div class="timeline-body">
-            <div class="timeline-date">2025 - 2026</div>
-            <div class="timeline-title">Université Technique de Munich (TUM)</div>
-            <div class="timeline-subtitle">Programme d'échange</div>
-            <div class="timeline-desc">
-              Mathématiques avancés, Cryptographie Post-Quantique, Algorithmique Quantique.
-            </div>
-          </div>
-        </div>
+      <div style="text-align: center; margin-bottom: 4rem;" class="reveal-text">
+        <a href="assets/cv.pdf" download class="btn-magnetic">
+          Télécharger le PDF
+        </a>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-logo-container">
-            <img src="assets/logos/LVMH.png" alt="LVMH Logo" class="timeline-logo">
-          </div>
-          <div class="timeline-body">
-            <div class="timeline-date">2025</div>
-            <div class="timeline-title">LVMH - Le Bon Marché</div>
-            <div class="timeline-subtitle">Stage IT & Cybersécurité</div>
-            <div class="timeline-desc">
-              Audit de sécurité, cartographie SI, gestion de projet technique. Collaboration avec les équipes DSI pour
-              la sécurisation des infrastructures.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-logo-container">
-            <img src="assets/logos/uga.png" alt="UGA Logo" class="timeline-logo">
-          </div>
-          <div class="timeline-body">
-            <div class="timeline-date">2023 - 2025</div>
-            <div class="timeline-title">Université Grenoble Alpes</div>
-            <div class="timeline-subtitle">Licence Mathématiques-Informatique</div>
-            <div class="timeline-desc">
-              Double cursus. Mention Bien. Bases solides en mathématiques fondamentales et informatique théorique.
-            </div>
-          </div>
-        </div>
+      <div class="card-editorial reveal-text"
+        style="padding: 0; overflow: hidden; height: 1000px; border: none; box-shadow: 0 20px 60px rgba(0,0,0,0.1);">
+        <iframe src="assets/cv.pdf" width="100%" height="100%" style="border: none;">
+          <p>Votre navigateur ne supporte pas les PDF. <a href="assets/cv.pdf">Télécharger le fichier.</a></p>
+        </iframe>
       </div>
 
     </div>
+  </section>
 
-    <div
-      style="margin-top: 60px; border: 1px solid #ddd; height: 800px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-      <!-- Fallback text if iframe not supported or PDF not found -->
-      <iframe src="cv_karl_loyau.pdf" width="100%" height="100%" style="border: none;">
-        <p>Votre navigateur ne supporte pas l'affichage des PDF. <a href="cv_karl_loyau.pdf">Télécharger le PDF</a>.</p>
-      </iframe>
+  <!-- Footer -->
+  <footer class="footer-prestigious">
+    <div class="container">
+      <div class="footer-logo">Karl <span>Loyau</span></div>
+      <div class="footer-links">
+        <a href="https://github.com/Kloyau">GitHub</a>
+        <a href="https://linkedin.com/in/karl-loyau">LinkedIn</a>
+        <a href="mailto:contact@karlloyau.com">Email</a>
+        <a href="assets/cv.pdf">Curriculum Vitae</a>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Karl Loyau. Tous droits réservés.
+      </div>
     </div>
-
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Karl Loyau. Tous droits réservés.</p>
   </footer>
 
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

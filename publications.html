@@ -4,148 +4,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Publications – Karl Loyau</title>
-  <link rel="stylesheet" href="/css/style.css">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
+  <title>Publications - Karl Loyau</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <nav class="topnav">
+  <!-- Navigation -->
+  <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-brand">Karl Loyau</a>
-      <div class="nav-links">
-        <a href="index.html">Accueil</a>
-
+      <a href="index.html" class="nav-brand">Karl <span>Loyau</span></a>
+      <div class="mobile-menu-btn" style="display:none; cursor:pointer; font-size:1.5rem;">☰</div>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Accueil</a>
         <div class="dropdown">
-          <span class="dropbtn">Parcours ▾</span>
-          <div class="dropdown-content">
-            <a href="parcours.html">Expérience & Formation</a>
-            <a href="cv.html">Curriculum Vitae</a>
+          <div class="nav-link" style="cursor:pointer;">Parcours</div>
+          <div class="dropdown-menu">
+            <a href="parcours.html" class="dropdown-item">Expérience & Formation</a>
+            <a href="cv.html" class="dropdown-item">Curriculum Vitae</a>
           </div>
         </div>
-
         <div class="dropdown">
-          <span class="dropbtn active">Réalisations ▾</span>
-          <div class="dropdown-content">
-            <a href="publications.html" class="active">Publications</a>
-            <a href="certifications.html">Certifications</a>
+          <div class="nav-link active" style="cursor:pointer;">Réalisations</div>
+          <div class="dropdown-menu">
+            <a href="publications.html" class="dropdown-item">Publications</a>
+            <a href="certifications.html" class="dropdown-item">Certifications</a>
           </div>
         </div>
-
         <div class="dropdown">
-          <span class="dropbtn">Réseau ▾</span>
-          <div class="dropdown-content">
-            <a href="recommandations.html">Recommandations</a>
-            <a href="liens.html">Liens Utiles</a>
+          <div class="nav-link" style="cursor:pointer;">Réseau</div>
+          <div class="dropdown-menu">
+            <a href="recommandations.html" class="dropdown-item">Recommandations</a>
+            <a href="liens.html" class="dropdown-item">Liens Utiles</a>
           </div>
         </div>
       </div>
     </div>
   </nav>
 
-  <div class="container">
-    <h1 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; margin-bottom: 40px;">Publications &
-      Travaux de Recherche</h1>
-
-    <div class="timeline">
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-logo-container">
-            <img src="assets/logos/LVMH.png" alt="LVMH Logo" class="timeline-logo">
-          </div>
-          <div class="timeline-body">
-            <div class="timeline-date">2025</div>
-            <div class="timeline-title">Addendum I – Transition post‑NISQ</div>
-            <div class="timeline-subtitle">Rapport Technique • LVMH</div>
-            <div class="timeline-desc">
-              Feuille de route cryptographique pour systèmes commerciaux face aux menaces quantiques. Analyse détaillée
-              des standards NIST (Kyber, Dilithium) et recommandations stratégiques d'implémentation.
-            </div>
-            <a href="./rapport-stage/rapport_stage.pdf" class="btn btn-sm" style="margin-top: 15px;">📄 Lire l’addendum
-              (PDF)</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-logo-container">
-            <img src="assets/logos/BonMarche.png" alt="Le Bon Marché Logo" class="timeline-logo">
-          </div>
-          <div class="timeline-body">
-            <div class="timeline-date">2025</div>
-            <div class="timeline-title">Rapport IT – Le Bon Marché</div>
-            <div class="timeline-subtitle">Audit Technique • LVMH</div>
-            <div class="timeline-desc">
-              Audit d'interconnexion des modules SaaS et cartographie complète du Système d'Information. Identification
-              des flux critiques et optimisation de l'architecture pour une meilleure résilience.
-            </div>
-            <a href="./rapport-stage/rapport_stage.pdf" class="btn btn-sm" style="margin-top: 15px;">📄 Lire le rapport
-              (PDF)</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-logo-container">
-            <img src="assets/logos/uga.png" alt="UGA Logo" class="timeline-logo">
-          </div>
-          <div class="timeline-body">
-            <div class="timeline-date">2024</div>
-            <div class="timeline-title">Thèse L3 – Codage MDPC post-quantique</div>
-            <div class="timeline-subtitle">Thèse de Bachelor • Université Grenoble Alpes</div>
-            <div class="timeline-desc">
-              Structure et sécurité post-NISQ des codes quasi-cycliques MDPC (Moderate Density Parity Check). Étude
-              approfondie des attaques par décodage itératif et des contre-mesures.
-            </div>
-            <a href="./these-mdpc/mdpc.pdf" class="btn btn-sm" style="margin-top: 15px;">📄 Lire la thèse (PDF)</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-logo-container">
-            <img src="assets/logos/uga.png" alt="UGA Logo" class="timeline-logo">
-          </div>
-          <div class="timeline-body">
-            <div class="timeline-date">2024</div>
-            <div class="timeline-title">Algebraic Framework for Characterization of Mixed States</div>
-            <div class="timeline-subtitle">Mémoire de Recherche • Université Grenoble Alpes</div>
-            <div class="timeline-desc">
-              <em>Algebraic Framework for Characterization of Mixed States in Quantum Computing Systems</em>. Co-écrit
-              avec Alexandra Militan-Mocanu.
-              <br><br>
-              <span style="font-size: 0.85rem;">DOI: <a href="https://doi.org/10.5281/zenodo.16748188"
-                  target="_blank">10.5281/zenodo.16748188</a></span>
-            </div>
-            <a href="https://doi.org/10.5281/zenodo.16748188" target="_blank" class="btn btn-sm"
-              style="margin-top: 15px;">📄 Lire en Ligne</a>
-          </div>
-        </div>
-      </div>
-
+  <!-- Page Hero -->
+  <header class="hero-cinematic" style="height: 60vh;">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-subtitle reveal-text">Recherche & Développement</span>
+      <h1 class="reveal-text">Publications</h1>
     </div>
-  </div>
+  </header>
 
-  <footer>
-    <p>&copy; 2025 Karl Loyau. Tous droits réservés.</p>
+  <!-- Main Content -->
+  <section class="section-editorial">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
+
+        <article class="card-editorial reveal-text">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <img src="assets/logos/TUM.png" alt="TUM" class="card-logo">
+            <span class="card-meta">2024</span>
+          </div>
+          <h3>Post-Quantum Signatures Analysis</h3>
+          <p>Une étude comparative rigoureuse des performances et de la robustesse cryptographique des algorithmes
+            Dilithium et Falcon. Analyse d'implémentation sur architectures contraintes.</p>
+          <div style="margin-top: 2rem; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 1rem;">
+            <span
+              style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--slate);">Mots-clés:
+              PQC, Lattice-based Crypto, Side-Channel Attacks</span>
+          </div>
+        </article>
+
+        <article class="card-editorial reveal-text" style="transition-delay: 0.2s;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <img src="assets/logos/Sapienza.png" alt="Sapienza" class="card-logo">
+            <span class="card-meta">2023</span>
+          </div>
+          <h3>Enterprise Network Security Audit</h3>
+          <p>Simulation et audit complet d'une infrastructure réseau d'entreprise. Identification de vecteurs d'attaque
+            potentiels et formulation de stratégies de mitigation.</p>
+          <div style="margin-top: 2rem; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 1rem;">
+            <span
+              style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--slate);">Mots-clés:
+              Pentesting, Network Architecture, Risk Assessment</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-prestigious">
+    <div class="container">
+      <div class="footer-logo">Karl <span>Loyau</span></div>
+      <div class="footer-links">
+        <a href="https://github.com/Kloyau">GitHub</a>
+        <a href="https://linkedin.com/in/karl-loyau">LinkedIn</a>
+        <a href="mailto:contact@karlloyau.com">Email</a>
+        <a href="assets/cv.pdf">Curriculum Vitae</a>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Karl Loyau. Tous droits réservés.
+      </div>
+    </div>
   </footer>
 
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -4,117 +4,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recommandations – Karl Loyau</title>
-  <link rel="stylesheet" href="/css/style.css">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
+  <title>Recommandations - Karl Loyau</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <nav class="topnav">
+  <!-- Navigation -->
+  <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-brand">Karl Loyau</a>
-      <div class="nav-links">
-        <a href="index.html">Accueil</a>
-
+      <a href="index.html" class="nav-brand">Karl <span>Loyau</span></a>
+      <div class="mobile-menu-btn" style="display:none; cursor:pointer; font-size:1.5rem;">☰</div>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Accueil</a>
         <div class="dropdown">
-          <span class="dropbtn">Parcours ▾</span>
-          <div class="dropdown-content">
-            <a href="parcours.html">Expérience & Formation</a>
-            <a href="cv.html">Curriculum Vitae</a>
+          <div class="nav-link" style="cursor:pointer;">Parcours</div>
+          <div class="dropdown-menu">
+            <a href="parcours.html" class="dropdown-item">Expérience & Formation</a>
+            <a href="cv.html" class="dropdown-item">Curriculum Vitae</a>
           </div>
         </div>
-
         <div class="dropdown">
-          <span class="dropbtn">Réalisations ▾</span>
-          <div class="dropdown-content">
-            <a href="publications.html">Publications</a>
-            <a href="certifications.html">Certifications</a>
+          <div class="nav-link" style="cursor:pointer;">Réalisations</div>
+          <div class="dropdown-menu">
+            <a href="publications.html" class="dropdown-item">Publications</a>
+            <a href="certifications.html" class="dropdown-item">Certifications</a>
           </div>
         </div>
-
         <div class="dropdown">
-          <span class="dropbtn active">Réseau ▾</span>
-          <div class="dropdown-content">
-            <a href="recommandations.html" class="active">Recommandations</a>
-            <a href="liens.html">Liens Utiles</a>
+          <div class="nav-link active" style="cursor:pointer;">Réseau</div>
+          <div class="dropdown-menu">
+            <a href="recommandations.html" class="dropdown-item">Recommandations</a>
+            <a href="liens.html" class="dropdown-item">Liens Utiles</a>
           </div>
         </div>
       </div>
     </div>
   </nav>
 
-  <div class="container">
-    <h1 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; margin-bottom: 40px;">
-      Recommandations Académiques</h1>
-
-    <p style="font-size: 1.1rem; color: #555; margin-bottom: 40px; max-width: 800px; line-height: 1.6;">
-      J'ai eu l'honneur de travailler et d'étudier sous la supervision de professeurs éminents dans les domaines des
-      mathématiques, de la cryptographie et de l'algèbre.
-    </p>
-
-    <div class="recommendation-grid">
-
-      <!-- Prof. Dr. Violetta Weger -->
-      <div class="recommendation-card animate-on-scroll">
-        <div class="rec-avatar" style="background: #fff; border: 1px solid #eee; padding: 10px;">
-          <img src="assets/logos/TUM.svg" alt="TUM" style="width: 100%; height: 100%; object-fit: contain;">
-        </div>
-        <div class="rec-name">Prof. Dr. Violetta Weger</div>
-        <div class="rec-title">Professeure Assistante</div>
-        <div class="rec-university">Université Technique de Munich (TUM)</div>
-        <div class="rec-desc">
-          Chaire d'Algèbre Appliquée. Spécialiste en cryptographie post-quantique, théorie des codes et théorie des
-          nombres.
-        </div>
-        <a href="https://www.cit.tum.de/cit/startseite/" target="_blank" class="rec-link">Voir le profil académique
-          &rarr;</a>
-      </div>
-
-      <!-- Prof. Dr. Jean Fasel -->
-      <div class="recommendation-card animate-on-scroll" style="transition-delay: 0.1s;">
-        <div class="rec-avatar" style="background: #fff; border: 1px solid #eee; padding: 10px;">
-          <img src="assets/logos/uga.png" alt="UGA" style="width: 100%; height: 100%; object-fit: contain;">
-        </div>
-        <div class="rec-name">Prof. Dr. Jean Fasel</div>
-        <div class="rec-title">Professeur des Universités</div>
-        <div class="rec-university">Université Grenoble Alpes</div>
-        <div class="rec-desc">
-          Institut Fourier. Expert en géométrie algébrique, K-théorie algébrique et méthodes motiviques.
-        </div>
-        <a href="https://www-fourier.ujf-grenoble.fr/" target="_blank" class="rec-link">Voir le profil académique
-          &rarr;</a>
-      </div>
-
-      <!-- Prof. Dr. Corrado De Concini -->
-      <div class="recommendation-card animate-on-scroll" style="transition-delay: 0.2s;">
-        <div class="rec-avatar" style="background: #fff; border: 1px solid #eee; padding: 10px;">
-          <img src="assets/logos/Sapienza.png" alt="Sapienza" style="width: 100%; height: 100%; object-fit: contain;">
-        </div>
-        <div class="rec-name">Prof. Dr. Corrado De Concini</div>
-        <div class="rec-title">Professeur Émérite</div>
-        <div class="rec-university">Sapienza Université de Rome</div>
-        <div class="rec-desc">
-          Membre de l'Accademia dei Lincei. Recherche en algèbre supérieure, géométrie algébrique et physique
-          mathématique.
-        </div>
-        <a href="https://www.mat.uniroma1.it/" target="_blank" class="rec-link">Voir le profil académique &rarr;</a>
-      </div>
-
+  <!-- Page Hero -->
+  <header class="hero-cinematic" style="height: 60vh;">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-subtitle reveal-text">Témoignages</span>
+      <h1 class="reveal-text">Recommandations</h1>
     </div>
-  </div>
+  </header>
 
-  <footer>
-    <p>&copy; 2025 Karl Loyau. Tous droits réservés.</p>
+  <!-- Main Content -->
+  <section class="section-editorial">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
+
+        <article class="card-editorial reveal-text" style="text-align: center;">
+          <img src="assets/logos/LVMH.png" alt="LVMH"
+            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 2rem; border: 3px solid var(--crimson);">
+          <h3 style="margin-bottom: 0.5rem;">Jean Dupont</h3>
+          <span class="card-meta" style="color: var(--charcoal);">CTO, LVMH</span>
+          <p style="font-style: italic; font-family: var(--font-serif); font-size: 1.2rem; margin-top: 1.5rem;">"Karl a
+            démontré une excellente capacité d'adaptation et une rigueur technique impressionnante lors de son stage.
+            Son travail sur l'optimisation de nos pipelines CI/CD a été remarquable."</p>
+        </article>
+
+        <article class="card-editorial reveal-text" style="text-align: center; transition-delay: 0.2s;">
+          <img src="assets/logos/BonMarche.png" alt="Bon Marché"
+            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 2rem; border: 3px solid var(--crimson);">
+          <h3 style="margin-bottom: 0.5rem;">Marie Martin</h3>
+          <span class="card-meta" style="color: var(--charcoal);">Lead Dev, Le Bon Marché</span>
+          <p style="font-style: italic; font-family: var(--font-serif); font-size: 1.2rem; margin-top: 1.5rem;">"Un
+            élément moteur dans l'équipe. Karl est curieux, proactif et techniquement solide. Je le recommande vivement
+            pour tout poste en ingénierie logicielle."</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-prestigious">
+    <div class="container">
+      <div class="footer-logo">Karl <span>Loyau</span></div>
+      <div class="footer-links">
+        <a href="https://github.com/Kloyau">GitHub</a>
+        <a href="https://linkedin.com/in/karl-loyau">LinkedIn</a>
+        <a href="mailto:contact@karlloyau.com">Email</a>
+        <a href="assets/cv.pdf">Curriculum Vitae</a>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Karl Loyau. Tous droits réservés.
+      </div>
+    </div>
   </footer>
 
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
