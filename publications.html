@@ -18,21 +18,21 @@
       <div class="nav-menu">
         <a href="index.html" class="nav-link">Accueil</a>
         <div class="dropdown">
-          <div class="nav-link" style="cursor:pointer;">Parcours</div>
+          <div class="nav-link">Parcours</div>
           <div class="dropdown-menu">
             <a href="parcours.html" class="dropdown-item">Expérience & Formation</a>
             <a href="cv.html" class="dropdown-item">Curriculum Vitae</a>
           </div>
         </div>
         <div class="dropdown">
-          <div class="nav-link active" style="cursor:pointer;">Réalisations</div>
+          <div class="nav-link active">Réalisations</div>
           <div class="dropdown-menu">
             <a href="publications.html" class="dropdown-item">Publications</a>
             <a href="certifications.html" class="dropdown-item">Certifications</a>
           </div>
         </div>
         <div class="dropdown">
-          <div class="nav-link" style="cursor:pointer;">Réseau</div>
+          <div class="nav-link">Réseau</div>
           <div class="dropdown-menu">
             <a href="recommandations.html" class="dropdown-item">Recommandations</a>
             <a href="liens.html" class="dropdown-item">Liens Utiles</a>
@@ -43,7 +43,7 @@
   </nav>
 
   <!-- Page Hero -->
-  <header class="hero-cinematic" style="height: 60vh;">
+  <header class="hero-cinematic small">
     <div class="hero-bg"></div>
     <div class="hero-content">
       <span class="hero-subtitle reveal-text">Recherche & Développement</span>
@@ -57,14 +57,16 @@
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
 
         <article class="card-editorial reveal-text">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-            <img src="assets/logos/TUM.png" alt="TUM" class="card-logo">
-            <span class="card-meta">2024</span>
+          <div style="padding: 2rem; flex-grow: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <img src="assets/logos/TUM.png" alt="TUM" class="logo-std">
+              <span class="card-meta">2024</span>
+            </div>
+            <h3>Post-Quantum Signatures Analysis</h3>
+            <p>Une étude comparative rigoureuse des performances et de la robustesse cryptographique des algorithmes
+              Dilithium et Falcon. Analyse d'implémentation sur architectures contraintes.</p>
           </div>
-          <h3>Post-Quantum Signatures Analysis</h3>
-          <p>Une étude comparative rigoureuse des performances et de la robustesse cryptographique des algorithmes
-            Dilithium et Falcon. Analyse d'implémentation sur architectures contraintes.</p>
-          <div style="margin-top: 2rem; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 1rem;">
+          <div style="padding: 1.5rem 2rem; border-top: 1px solid rgba(0,0,0,0.05); background: var(--paper);">
             <span
               style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--slate);">Mots-clés:
               PQC, Lattice-based Crypto, Side-Channel Attacks</span>
@@ -72,14 +74,16 @@
         </article>
 
         <article class="card-editorial reveal-text" style="transition-delay: 0.2s;">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-            <img src="assets/logos/Sapienza.png" alt="Sapienza" class="card-logo">
-            <span class="card-meta">2023</span>
+          <div style="padding: 2rem; flex-grow: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <img src="assets/logos/Sapienza.png" alt="Sapienza" class="logo-std">
+              <span class="card-meta">2023</span>
+            </div>
+            <h3>Enterprise Network Security Audit</h3>
+            <p>Simulation et audit complet d'une infrastructure réseau d'entreprise. Identification de vecteurs
+              d'attaque potentiels et formulation de stratégies de mitigation.</p>
           </div>
-          <h3>Enterprise Network Security Audit</h3>
-          <p>Simulation et audit complet d'une infrastructure réseau d'entreprise. Identification de vecteurs d'attaque
-            potentiels et formulation de stratégies de mitigation.</p>
-          <div style="margin-top: 2rem; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 1rem;">
+          <div style="padding: 1.5rem 2rem; border-top: 1px solid rgba(0,0,0,0.05); background: var(--paper);">
             <span
               style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--slate);">Mots-clés:
               Pentesting, Network Architecture, Risk Assessment</span>

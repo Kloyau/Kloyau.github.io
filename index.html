@@ -21,7 +21,7 @@
         <a href="index.html" class="nav-link active">Accueil</a>
 
         <div class="dropdown">
-          <div class="nav-link" style="cursor:pointer;">Parcours</div>
+          <div class="nav-link">Parcours</div>
           <div class="dropdown-menu">
             <a href="parcours.html" class="dropdown-item">Expérience & Formation</a>
             <a href="cv.html" class="dropdown-item">Curriculum Vitae</a>
@@ -29,7 +29,7 @@
         </div>
 
         <div class="dropdown">
-          <div class="nav-link" style="cursor:pointer;">Réalisations</div>
+          <div class="nav-link">Réalisations</div>
           <div class="dropdown-menu">
             <a href="publications.html" class="dropdown-item">Publications</a>
             <a href="certifications.html" class="dropdown-item">Certifications</a>
@@ -37,7 +37,7 @@
         </div>
 
         <div class="dropdown">
-          <div class="nav-link" style="cursor:pointer;">Réseau</div>
+          <div class="nav-link">Réseau</div>
           <div class="dropdown-menu">
             <a href="recommandations.html" class="dropdown-item">Recommandations</a>
             <a href="liens.html" class="dropdown-item">Liens Utiles</a>
@@ -68,8 +68,8 @@
   <!-- Editorial Section: Skills -->
   <section class="section-editorial">
     <div class="container">
-      <div class="editorial-grid">
-        <div class="col-text reveal-text">
+      <div class="grid-editorial">
+        <div class="col-6 reveal-text">
           <span class="card-meta">Expertise Technique</span>
           <h2>Maîtrise & <br>Compétences</h2>
           <p>Une expertise approfondie dans les domaines critiques de l'informatique moderne, alliant théorie
@@ -88,10 +88,10 @@
             <p style="font-size: 1rem;">Kubernetes, AWS, CI/CD Pipelines, Infrastructure as Code.</p>
           </div>
         </div>
-        <div class="col-image reveal-text" style="transition-delay: 0.3s;">
+        <div class="col-6 reveal-text" style="transition-delay: 0.3s;">
           <!-- Placeholder for abstract tech visualization -->
           <div
-            style="width: 100%; height: 500px; background: var(--charcoal); display: flex; align-items: center; justify-content: center; color: var(--ivory);">
+            style="width: 100%; height: 500px; background: var(--charcoal); display: flex; align-items: center; justify-content: center; color: var(--ivory); border-bottom: 4px solid var(--gold);">
             <span style="font-family: var(--font-serif); font-style: italic; font-size: 2rem;">Excellence
               Technique</span>
           </div>
@@ -111,25 +111,33 @@
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
 
         <article class="card-editorial reveal-text">
-          <img src="assets/logos/TUM.png" alt="TUM" class="card-logo">
-          <span class="card-meta">Recherche • 2024</span>
-          <h3>Post-Quantum Signatures</h3>
-          <p>Analyse comparative approfondie des algorithmes Dilithium et Falcon. Étude de performance et de résistance
-            aux attaques par canaux auxiliaires.</p>
-          <a href="publications.html"
-            style="font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Lire la
-            publication →</a>
+          <div style="padding: 1.5rem; flex-grow: 1;">
+            <img src="assets/logos/TUM.png" alt="TUM" class="logo-std">
+            <span class="card-meta">Recherche • 2024</span>
+            <h3>Post-Quantum Signatures</h3>
+            <p>Analyse comparative approfondie des algorithmes Dilithium et Falcon. Étude de performance et de
+              résistance aux attaques par canaux auxiliaires.</p>
+          </div>
+          <div style="padding: 1.5rem; border-top: 1px solid rgba(0,0,0,0.05);">
+            <a href="publications.html"
+              style="font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Lire la
+              publication →</a>
+          </div>
         </article>
 
         <article class="card-editorial reveal-text" style="transition-delay: 0.2s;">
-          <img src="assets/logos/GitHub.png" alt="GitHub" class="card-logo">
-          <span class="card-meta">Développement • 2025</span>
-          <h3>Agentic Portfolio</h3>
-          <p>Conception d'une plateforme web personnelle utilisant des agents IA avancés pour le développement et le
-            déploiement continu.</p>
-          <a href="https://github.com/Kloyau"
-            style="font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Voir le code
-            source →</a>
+          <div style="padding: 1.5rem; flex-grow: 1;">
+            <img src="assets/logos/GitHub.png" alt="GitHub" class="logo-std">
+            <span class="card-meta">Développement • 2025</span>
+            <h3>Agentic Portfolio</h3>
+            <p>Conception d'une plateforme web personnelle utilisant des agents IA avancés pour le développement et le
+              déploiement continu.</p>
+          </div>
+          <div style="padding: 1.5rem; border-top: 1px solid rgba(0,0,0,0.05);">
+            <a href="https://github.com/Kloyau"
+              style="font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Voir le
+              code source →</a>
+          </div>
         </article>
 
       </div>

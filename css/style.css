@@ -1,12 +1,13 @@
 /* 
  * Harvard-Level Academic Portfolio Theme
- * Prestigious, Editorial, Sophisticated
+ * Ultimate Prestige Edition
+ * Version: 2.0.0
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
 
 :root {
-  /* Palette: Ivy League Excellence */
+  /* --- Palette: Ivy League Excellence --- */
   --crimson: #A51C30;
   /* Harvard Crimson */
   --crimson-dark: #780d1e;
@@ -23,23 +24,28 @@
   --paper: #F5F5F5;
   /* Light Gray Background */
 
-  /* Typography */
+  /* --- Typography --- */
   --font-serif: 'Merriweather', serif;
   --font-sans: 'Inter', sans-serif;
 
-  /* Spacing & Layout */
+  /* --- Spacing & Layout --- */
   --container-width: 1200px;
   --header-height: 90px;
+  --section-spacing: 8rem;
 
-  /* Easing */
+  /* --- Easing --- */
   --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/* Reset & Base */
+/* --- Reset & Base --- */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -49,8 +55,12 @@ body {
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+/* --- Typography System --- */
 h1,
 h2,
 h3,
@@ -66,7 +76,6 @@ h6 {
 
 h1 {
   font-size: clamp(3rem, 5vw, 5rem);
-  /* Fluid Typography */
   letter-spacing: -0.02em;
 }
 
@@ -86,6 +95,11 @@ h2::after {
   background-color: var(--crimson);
 }
 
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 p {
   font-size: 1.1rem;
   color: var(--slate);
@@ -100,7 +114,7 @@ a {
   position: relative;
 }
 
-/* Navigation - Transparent to Solid */
+/* --- Navigation --- */
 .navbar {
   position: fixed;
   top: 0;
@@ -153,6 +167,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   position: relative;
+  cursor: pointer;
 }
 
 .nav-link::before {
@@ -171,7 +186,7 @@ a {
   width: 100%;
 }
 
-/* Dropdown (Elegant) */
+/* --- Dropdown --- */
 .dropdown {
   position: relative;
 }
@@ -189,6 +204,7 @@ a {
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s var(--ease-out-expo);
+  z-index: 1001;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -212,7 +228,7 @@ a {
   padding-left: 2.5rem;
 }
 
-/* Cinematic Hero */
+/* --- Hero Sections --- */
 .hero-cinematic {
   height: 100vh;
   display: flex;
@@ -222,6 +238,10 @@ a {
   position: relative;
   overflow: hidden;
   background: var(--ivory);
+}
+
+.hero-cinematic.small {
+  height: 60vh;
 }
 
 .hero-bg {
@@ -234,7 +254,7 @@ a {
     radial-gradient(circle at 20% 80%, rgba(165, 28, 48, 0.08), transparent 50%);
   z-index: 0;
   transform: scale(1.1);
-  /* For parallax */
+  will-change: transform;
 }
 
 .hero-content {
@@ -255,7 +275,7 @@ a {
   font-weight: 600;
 }
 
-/* Buttons (Magnetic) */
+/* --- Buttons --- */
 .btn-magnetic {
   display: inline-block;
   padding: 1.2rem 2.5rem;
@@ -267,6 +287,8 @@ a {
   border: 1px solid var(--charcoal);
   transition: all 0.3s var(--ease-out-expo);
   cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
 .btn-magnetic:hover {
@@ -286,9 +308,9 @@ a {
   color: var(--ivory);
 }
 
-/* Editorial Sections */
+/* --- Layout Utilities --- */
 .section-editorial {
-  padding: 8rem 0;
+  padding: var(--section-spacing) 0;
   position: relative;
 }
 
@@ -298,31 +320,22 @@ a {
   padding: 0 2rem;
 }
 
-/* Editorial Grid */
-.editorial-grid {
+.grid-editorial {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 2rem;
   align-items: center;
 }
 
-.col-text {
-  grid-column: 1 / 7;
+.col-6 {
+  grid-column: span 6;
 }
 
-.col-image {
-  grid-column: 8 / 13;
-  position: relative;
+.col-12 {
+  grid-column: span 12;
 }
 
-.col-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  box-shadow: 20px 20px 0 var(--paper);
-}
-
-/* Cards (Magazine Style) */
+/* --- Cards: Editorial (Standard) --- */
 .card-editorial {
   background: var(--ivory);
   padding: 3rem;
@@ -332,6 +345,8 @@ a {
   height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
 .card-editorial:hover {
@@ -349,59 +364,76 @@ a {
   display: block;
 }
 
-.card-logo {
-  width: 80px;
-  /* Increased and fixed */
-  height: 80px;
-  /* Fixed height */
-  object-fit: contain;
-  /* Ensure aspect ratio */
-  object-position: left center;
-  /* Align left */
-  margin-bottom: 1.5rem;
-  filter: grayscale(100%);
-  transition: filter 0.3s;
-  background: white;
-  /* Ensure transparent logos look good */
-  padding: 5px;
-  border-radius: 8px;
-}
-
-.card-editorial:hover .card-logo {
-  filter: grayscale(0%);
-}
-
-/* Link Cards (Specific Fix) */
+/* --- Cards: Link (Horizontal) --- */
 .card-link {
   display: flex;
   flex-direction: row;
-  /* Horizontal layout */
   align-items: center;
   gap: 1.5rem;
   padding: 2rem;
+  background: var(--ivory);
+  border-left: 4px solid var(--crimson);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s var(--ease-out-expo);
   text-decoration: none;
-  /* Remove underline */
 }
 
-.card-link .card-logo {
-  margin-bottom: 0;
-  /* No bottom margin for horizontal layout */
+.card-link:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background: var(--paper);
+}
+
+.card-link img {
   width: 60px;
   height: 60px;
+  object-fit: contain;
 }
 
 .card-link h3 {
-  margin-bottom: 0.25rem;
+  margin: 0 0 0.25rem 0;
   font-size: 1.25rem;
 }
 
 .card-link p {
-  margin-bottom: 0;
+  margin: 0;
   font-size: 0.9rem;
 }
 
-/* Timeline (Vertical Elegant) */
-.timeline-elegant {
+/* --- Cards: Recommendation (Centered) --- */
+.card-recommendation {
+  background: var(--ivory);
+  padding: 3rem;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  transition: all 0.4s var(--ease-out-expo);
+}
+
+.card-recommendation:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+.card-recommendation img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 3px solid var(--crimson);
+}
+
+.card-recommendation blockquote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+  color: var(--charcoal);
+}
+
+/* --- Timeline (Prestige) --- */
+.timeline-prestige {
   position: relative;
   padding-left: 4rem;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
@@ -409,7 +441,7 @@ a {
 
 .timeline-node {
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .timeline-node::before {
@@ -427,7 +459,7 @@ a {
 
 .timeline-node:hover::before {
   background: var(--crimson);
-  transform: scale(1.3);
+  transform: scale(1.5);
 }
 
 .timeline-year {
@@ -435,10 +467,25 @@ a {
   font-weight: 700;
   color: var(--gold);
   margin-bottom: 0.5rem;
+  display: block;
 }
 
-/* Footer */
+/* --- Logo Standardization --- */
+.logo-std {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  object-position: center;
+  background: white;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+/* --- Footer --- */
 .footer-prestigious {
+  margin-top: auto;
   background: var(--charcoal);
   color: var(--ivory);
   padding: 6rem 0 3rem;
@@ -476,7 +523,7 @@ a {
   font-size: 0.8rem;
 }
 
-/* Animations */
+/* --- Animations --- */
 .reveal-text {
   opacity: 0;
   transform: translateY(30px);
@@ -488,23 +535,26 @@ a {
   transform: translateY(0);
 }
 
-/* Mobile */
+/* --- Responsive --- */
 @media (max-width: 768px) {
-  .editorial-grid {
+  .grid-editorial {
     grid-template-columns: 1fr;
   }
 
-  .col-text,
-  .col-image {
+  .col-6,
+  .col-12 {
     grid-column: 1 / -1;
   }
 
   .nav-menu {
     display: none;
-    /* Simple hide for now, JS toggle needed */
   }
 
   .mobile-menu-btn {
-    display: block;
+    display: block !important;
+  }
+
+  h1 {
+    font-size: 2.5rem;
   }
 }

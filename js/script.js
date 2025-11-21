@@ -1,8 +1,14 @@
+/**
+ * Harvard-Level Academic Portfolio
+ * Ultimate Prestige Edition
+ * Core Logic & Animation Engine
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
 
-  // 1. Scroll Observer for Text Reveals
+  // --- 1. Animation Engine (Intersection Observer) ---
   const observerOptions = {
-    threshold: 0.15,
+    threshold: 0.1,
     rootMargin: "0px 0px -50px 0px"
   };
 
@@ -10,20 +16,26 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+        observer.unobserve(entry.target); // Only animate once
       }
     });
   }, observerOptions);
 
-  const revealElements = document.querySelectorAll('.reveal-text, .card-editorial, .timeline-node');
+  const revealElements = document.querySelectorAll('.reveal-text, .card-editorial, .card-link, .card-recommendation, .timeline-node');
   revealElements.forEach((el, index) => {
-    // Stagger animations slightly
-    el.style.transitionDelay = `${index % 3 * 0.1}s`;
+    // Smart Staggering: Calculate delay based on index within its container
+    // This prevents massive delays on long lists
+    const delay = (index % 4) * 0.15;
+    el.style.transitionDelay = `${delay}s`;
     observer.observe(el);
   });
 
-  // 2. Navbar Transition
+  // --- 2. Navigation Logic ---
   const navbar = document.querySelector('.navbar');
+  const mobileBtn = document.querySelector('.mobile-menu-btn');
+  const navMenu = document.querySelector('.nav-menu');
+
+  // Scroll Effect
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
       navbar.classList.add('scrolled');
@@ -32,16 +44,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 3. Parallax Effect for Hero Background
+  // Mobile Menu Toggle
+  if (mobileBtn) {
+    mobileBtn.addEventListener('click', () => {
+      const isHidden = navMenu.style.display === 'none' || navMenu.style.display === '';
+
+      if (isHidden) {
+        navMenu.style.display = 'flex';
+        navMenu.style.flexDirection = 'column';
+        navMenu.style.position = 'absolute';
+        navMenu.style.top = '100%';
+        navMenu.style.left = '0';
+        navMenu.style.width = '100%';
+        navMenu.style.background = '#FCFCFC';
+        navMenu.style.padding = '2rem';
+        navMenu.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
+        navMenu.style.borderTop = '3px solid #A51C30';
+      } else {
+        navMenu.style.display = 'none';
+      }
+    });
+  }
+
+  // --- 3. Parallax Engine ---
   const heroBg = document.querySelector('.hero-bg');
   if (heroBg) {
     window.addEventListener('scroll', () => {
       const scrollValue = window.scrollY;
-      heroBg.style.transform = `translateY(${scrollValue * 0.4}px) scale(1.1)`;
+      // Limit parallax to viewport height to save performance
+      if (scrollValue < window.innerHeight) {
+        heroBg.style.transform = `translateY(${scrollValue * 0.4}px) scale(1.1)`;
+      }
     });
   }
 
-  // 4. Magnetic Button Effect
+  // --- 4. Magnetic Buttons ---
   const buttons = document.querySelectorAll('.btn-magnetic');
   buttons.forEach(btn => {
     btn.addEventListener('mousemove', (e) => {
@@ -49,12 +86,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
 
-      // Calculate distance from center
       const centerX = rect.width / 2;
       const centerY = rect.height / 2;
 
-      const deltaX = (x - centerX) * 0.3; // Magnetic pull strength
-      const deltaY = (y - centerY) * 0.3;
+      const deltaX = (x - centerX) * 0.2; // Strength
+      const deltaY = (y - centerY) * 0.2;
 
       btn.style.transform = `translate(${deltaX}px, ${deltaY}px) scale(1.05)`;
     });
@@ -64,23 +100,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 5. Mobile Menu Toggle
-  const mobileBtn = document.querySelector('.mobile-menu-btn');
-  const navMenu = document.querySelector('.nav-menu');
-
-  if (mobileBtn) {
-    mobileBtn.addEventListener('click', () => {
-      navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
-      if (navMenu.style.display === 'flex') {
-        navMenu.style.flexDirection = 'column';
-        navMenu.style.position = 'absolute';
-        navMenu.style.top = '100%';
-        navMenu.style.left = '0';
-        navMenu.style.width = '100%';
-        navMenu.style.background = '#FCFCFC';
-        navMenu.style.padding = '2rem';
-        navMenu.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
-      }
-    });
-  }
 });
