@@ -330,6 +330,8 @@ a {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
   transition: transform 0.4s var(--ease-out-expo), box-shadow 0.4s;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-editorial:hover {
@@ -348,16 +350,54 @@ a {
 }
 
 .card-logo {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  /* Increased and fixed */
+  height: 80px;
+  /* Fixed height */
   object-fit: contain;
+  /* Ensure aspect ratio */
+  object-position: left center;
+  /* Align left */
   margin-bottom: 1.5rem;
   filter: grayscale(100%);
   transition: filter 0.3s;
+  background: white;
+  /* Ensure transparent logos look good */
+  padding: 5px;
+  border-radius: 8px;
 }
 
 .card-editorial:hover .card-logo {
   filter: grayscale(0%);
+}
+
+/* Link Cards (Specific Fix) */
+.card-link {
+  display: flex;
+  flex-direction: row;
+  /* Horizontal layout */
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  text-decoration: none;
+  /* Remove underline */
+}
+
+.card-link .card-logo {
+  margin-bottom: 0;
+  /* No bottom margin for horizontal layout */
+  width: 60px;
+  height: 60px;
+}
+
+.card-link h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.card-link p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
 }
 
 /* Timeline (Vertical Elegant) */
