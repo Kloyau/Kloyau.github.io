@@ -307,7 +307,7 @@ footer {
 
 .section-observe.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 @media (max-width: 940px) {
