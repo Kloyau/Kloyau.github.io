@@ -4,203 +4,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karl Loyau - Portfolio Académique</title>
+  <title>Karl Loyau — Géométrie Algébrique, Théorie des Codes & Cryptographie PQC</title>
+  <meta name="description"
+    content="Page de présentation professionnelle : géométrie algébrique, théorie des codes et cryptographie post-quantique.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <div class="page-noise" aria-hidden="true"></div>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-brand">Karl <span>Loyau</span></a>
-
-      <div class="mobile-menu-btn" style="display:none; cursor:pointer; font-size:1.5rem;">☰</div>
-
-      <div class="nav-menu">
-        <a href="index.html" class="nav-link active">Accueil</a>
-
-        <div class="dropdown">
-          <div class="nav-link">Parcours</div>
-          <div class="dropdown-menu">
-            <a href="parcours.html" class="dropdown-item">Expérience & Formation</a>
-            <a href="cv.html" class="dropdown-item">Curriculum Vitae</a>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <div class="nav-link">Réalisations</div>
-          <div class="dropdown-menu">
-            <a href="publications.html" class="dropdown-item">Publications</a>
-            <a href="certifications.html" class="dropdown-item">Certifications</a>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <div class="nav-link">Réseau</div>
-          <div class="dropdown-menu">
-            <a href="recommandations.html" class="dropdown-item">Recommandations</a>
-            <a href="liens.html" class="dropdown-item">Liens Utiles</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Cinematic Hero -->
-  <header class="hero-cinematic">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <span class="hero-subtitle reveal-text">Portfolio Académique & Professionnel</span>
-      <h1 class="reveal-text" style="transition-delay: 0.1s;">Mathématiques & <br><span
-          style="color: var(--crimson);">Informatique Avancée</span></h1>
-      <p class="reveal-text" style="transition-delay: 0.2s; margin: 0 auto 2.5rem;">
-        Étudiant en programme d'échange à l'Université Technique de Munich (TUM).
-        Passionné par l'exploration des algèbres, la cryptologie post-NISQ et la sécurité des systèmes d'information.
-      </p>
-      <div class="reveal-text" style="transition-delay: 0.3s;">
-        <a href="parcours.html" class="btn-magnetic">Découvrir mon Parcours</a>
-        <a href="cv.html" class="btn-magnetic btn-outline" style="margin-left: 1rem;">Consulter le CV</a>
-      </div>
-    </div>
+  <header class="topbar">
+    <a class="brand" href="#hero">Karl Loyau</a>
+    <nav>
+      <a href="#vision">Vision</a>
+      <a href="#expertises">Expertises</a>
+      <a href="#travaux">Travaux</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- Editorial Section: Methodology & Philosophy -->
-  <section class="section-editorial">
-    <div class="container">
-      <div class="grid-auto-fit">
-        <div class="reveal-text">
-          <span class="card-meta">À Propos</span>
-          <h2>Vision & <br>Ambition</h2>
-          <p>
-            Actuellement étudiant en programme d'échange à l'Université Technique de Munich (TUM), je me spécialise en
-            mathématiques et informatique.
-            Mon parcours académique est guidé par une fascination pour les structures algébriques complexes et leur
-            application dans la cryptographie de demain (Post-Quantum & Post-NISQ).
+  <main>
+    <section id="hero" class="hero section-observe">
+      <div class="hero-aurora" aria-hidden="true"></div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="label">Mathématiques avancées & sécurité de demain</p>
+          <h1>Une approche d'excellence inspirée par l'ENS Ulm, Polytechnique et Harvard.</h1>
+          <p class="lead">
+            Je conçois des ponts entre la <strong>géométrie algébrique</strong>, la <strong>théorie des codes</strong> et la
+            <strong>cryptographie post-quantique (PQC)</strong> pour bâtir des systèmes robustes, élégants et pérennes.
           </p>
-          <p>
-            Je cherche à contribuer à des projets innovants qui allient rigueur théorique et impact technologique
-            concret.
-            Mon expérience, allant de la gestion de systèmes d'information au Groupe Bon Marché à la recherche
-            académique, m'a appris à aborder les problèmes avec pragmatisme et précision.
-          </p>
-        </div>
-        <div class="reveal-text" style="transition-delay: 0.2s;">
-          <div
-            style="background: var(--charcoal); padding: 3rem; color: var(--ivory); position: relative; overflow: hidden;">
-            <div
-              style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: var(--crimson); border-radius: 50%; opacity: 0.2;">
-            </div>
-            <h3 style="color: var(--gold); margin-bottom: 2rem;">Domaines d'Expertise</h3>
-
-            <div style="margin-bottom: 1.5rem;">
-              <h4 style="color: var(--ivory); font-size: 1.1rem; margin-bottom: 0.5rem;">Mathématiques & Crypto</h4>
-              <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 0.5rem;">Algèbre, Cryptologie
-                Post-NISQ, Produits Dérivés.</p>
-              <div class="chip-container">
-                <span class="chip"
-                  style="background: rgba(255,255,255,0.1); color: var(--ivory); border: none;">Mathématiques</span>
-                <span class="chip"
-                  style="background: rgba(255,255,255,0.1); color: var(--ivory); border: none;">Cryptographie</span>
-                <span class="chip"
-                  style="background: rgba(255,255,255,0.1); color: var(--ivory); border: none;">Finance</span>
-              </div>
-            </div>
-
-            <div style="margin-bottom: 1.5rem;">
-              <h4 style="color: var(--ivory); font-size: 1.1rem; margin-bottom: 0.5rem;">Sécurité & Systèmes</h4>
-              <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 0.5rem;">Cyber-sécurité, Gestion
-                de SI, Développement.</p>
-              <div class="chip-container">
-                <span class="chip"
-                  style="background: rgba(255,255,255,0.1); color: var(--ivory); border: none;">Cyber-sécurité</span>
-                <span class="chip"
-                  style="background: rgba(255,255,255,0.1); color: var(--ivory); border: none;">SI</span>
-                <span class="chip"
-                  style="background: rgba(255,255,255,0.1); color: var(--ivory); border: none;">Python</span>
-              </div>
-            </div>
-
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#travaux">Explorer mes travaux</a>
+            <a class="btn btn-ghost" href="#contact">Me contacter</a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Editorial Section: Featured Work -->
-  <section class="section-editorial" style="background: var(--paper);">
-    <div class="container">
-      <div style="text-align: center; margin-bottom: 4rem;">
-        <span class="card-meta reveal-text">Sélection de Travaux</span>
-        <h2 class="reveal-text">Projets & Recherche</h2>
-      </div>
-
-      <div class="grid-auto-fit">
-
-        <article class="card-editorial reveal-text">
-          <div style="padding: 1.5rem; flex-grow: 1;">
-            <img src="assets/logos/TUM.png" alt="TUM" class="logo-std">
-            <span class="card-meta">Publication • Août 2025</span>
-            <h3>Algebraic Framework for Quantum Systems</h3>
-            <p>
-              "Algebraic Framework for the Characterization of Mixed States in Quantum Computing Systems".
-              Une approche mathématique pour caractériser les états mixtes dans les systèmes de calcul quantique,
-              ouvrant la voie à des protocoles de correction d'erreurs plus robustes.
-            </p>
-            <div class="chip-container">
-              <span class="chip">Quantum Computing</span>
-              <span class="chip">Algebra</span>
-              <span class="chip">Research</span>
-            </div>
+        <aside class="hero-panel tilt-card">
+          <h2>Axes stratégiques</h2>
+          <ul>
+            <li><span>01.</span> Courbes algébriques et structures de corps finis.</li>
+            <li><span>02.</span> Codes correcteurs performants pour canaux bruités.</li>
+            <li><span>03.</span> Protocoles PQC résilients à l'ère quantique.</li>
+          </ul>
+          <div class="badge-row">
+            <span class="badge">Rigueur théorique</span>
+            <span class="badge">Impact industriel</span>
+            <span class="badge">Vision long terme</span>
           </div>
-          <div style="padding: 1.5rem; border-top: 1px solid rgba(0,0,0,0.05);">
-            <a href="publications.html"
-              style="font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;">Lire la
-              publication →</a>
-          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="vision" class="section-observe split-section">
+      <div>
+        <p class="label">Vision</p>
+        <h2>Une recherche profonde, orientée vers des applications critiques.</h2>
+        <p>
+          Mon positionnement s'inscrit dans une culture académique exigeante : excellence formelle, qualité d'exposition
+          et pertinence opérationnelle.
+          J'interviens à l'interface entre théorie pure et enjeux de cybersécurité réels : souveraineté numérique,
+          confidentialité, et robustesse des infrastructures.
+        </p>
+      </div>
+      <div class="geo-illustration tilt-card" aria-hidden="true">
+        <svg viewBox="0 0 500 320" role="img">
+          <defs>
+            <linearGradient id="curveGlow" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#c0a062" />
+              <stop offset="100%" stop-color="#861b2d" />
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="500" height="320" rx="20" fill="rgba(255,255,255,0.02)" />
+          <path d="M30 260 Q 140 40, 250 170 T 470 90" fill="none" stroke="url(#curveGlow)" stroke-width="4" />
+          <circle cx="140" cy="105" r="7" fill="#f0eadf" />
+          <circle cx="250" cy="170" r="7" fill="#f0eadf" />
+          <circle cx="360" cy="134" r="7" fill="#f0eadf" />
+          <path d="M140 105 L250 170 L360 134" stroke="#f0eadf" stroke-dasharray="6 8" fill="none" opacity="0.5" />
+        </svg>
+      </div>
+    </section>
+
+    <section id="expertises" class="section-observe cards-section">
+      <p class="label">Expertises</p>
+      <h2>Trois piliers scientifiques complémentaires</h2>
+      <div class="cards-grid">
+        <article class="feature-card tilt-card">
+          <h3>Géométrie algébrique</h3>
+          <p>Étude des variétés, courbes et invariants pour modéliser des problèmes cryptographiques de haute complexité.</p>
         </article>
-
-        <article class="card-editorial reveal-text" style="transition-delay: 0.2s;">
-          <div style="padding: 1.5rem; flex-grow: 1;">
-            <img src="assets/logos/BonMarche.png" alt="Bon Marché" class="logo-std">
-            <span class="card-meta">Expérience • Été 2025</span>
-            <h3>Information System Intern</h3>
-            <p>
-              Stage au sein du Groupe Bon Marché. Participation à la gestion et à l'optimisation des systèmes
-              d'information d'une grande maison de luxe.
-              Analyse des flux de données et support aux équipes opérationnelles.
-            </p>
-            <div class="chip-container">
-              <span class="chip">Information Systems</span>
-              <span class="chip">Luxe</span>
-              <span class="chip">Management</span>
-            </div>
-          </div>
-          <div style="padding: 1.5rem; border-top: 1px solid rgba(0,0,0,0.05);">
-            <a href="parcours.html"
-              style="font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;">Voir le
-              parcours →</a>
-          </div>
+        <article class="feature-card tilt-card">
+          <h3>Théorie des codes</h3>
+          <p>Conception de codes correcteurs pour fiabilité, transmission sécurisée et optimisation des performances.</p>
         </article>
+        <article class="feature-card tilt-card">
+          <h3>Cryptographie PQC</h3>
+          <p>Approches post-quantiques (codes, réseaux, isogénies) adaptées aux architectures de sécurité futures.</p>
+        </article>
+      </div>
+    </section>
 
+    <section id="travaux" class="section-observe timeline-section">
+      <p class="label">Parcours de recherche</p>
+      <h2>Une progression structurée de la théorie vers l'implémentation</h2>
+      <div class="timeline">
+        <div class="step">
+          <span>Fondements</span>
+          <p>Approfondissement de l'algèbre commutative, des schémas et de l'arithmétique des corps finis.</p>
+        </div>
+        <div class="step">
+          <span>Ingénierie des codes</span>
+          <p>Expérimentation de familles de codes avec métriques de correction et contraintes de complexité.</p>
+        </div>
+        <div class="step">
+          <span>Déploiement PQC</span>
+          <p>Évaluation de schémas robustes pour répondre aux standards de sécurité post-quantiques.</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer-prestigious">
-    <div class="container">
-      <div class="footer-logo">Karl <span>Loyau</span></div>
-      <div class="footer-links">
-        <a href="https://github.com/Kloyau">GitHub</a>
-        <a href="https://linkedin.com/in/karl-loyau">LinkedIn</a>
-        <a href="mailto:contact@karlloyau.com">Email</a>
-        <a href="assets/cv.pdf">Curriculum Vitae</a>
-      </div>
-      <div class="copyright">
-        &copy; 2025 Karl Loyau. Tous droits réservés. <br>Conçu avec excellence académique.
-      </div>
-    </div>
+    <section id="contact" class="section-observe contact-panel">
+      <h2>Construisons une collaboration académique ou industrielle de haut niveau.</h2>
+      <p>Disponible pour projets de recherche, stages R&D et missions orientées sécurité mathématique.</p>
+      <a class="btn btn-primary" href="mailto:contact@example.com">contact@example.com</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Karl Loyau — Portfolio professionnel.</p>
   </footer>
 
   <script src="js/script.js"></script>
