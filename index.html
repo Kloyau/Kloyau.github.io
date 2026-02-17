@@ -2,204 +2,223 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karl Loyau - Portfolio Académique</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karl Loyau — Géométrie algébrique, théorie des codes, cryptographie post-quantique</title>
+  <meta name="description"
+    content="Présentation professionnelle de Karl Loyau : recherche en géométrie algébrique, théorie des codes et cryptographie post-quantique." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-brand">Karl <span>Loyau</span></a>
-
-      <div class="mobile-menu-btn" style="display:none; cursor:pointer; font-size:1.5rem;">☰</div>
-
-      <div class="nav-menu">
-        <a href="index.html" class="nav-link active">Accueil</a>
-
-        <div class="dropdown">
-          <div class="nav-link">Parcours</div>
-          <div class="dropdown-menu">
-            <a href="parcours.html" class="dropdown-item">Expérience & Formation</a>
-            <a href="cv.html" class="dropdown-item">Curriculum Vitae</a>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <div class="nav-link">Réalisations</div>
-          <div class="dropdown-menu">
-            <a href="publications.html" class="dropdown-item">Publications</a>
-            <a href="certifications.html" class="dropdown-item">Certifications</a>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <div class="nav-link">Réseau</div>
-          <div class="dropdown-menu">
-            <a href="recommandations.html" class="dropdown-item">Recommandations</a>
-            <a href="liens.html" class="dropdown-item">Liens Utiles</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Cinematic Hero -->
-  <header class="hero-cinematic">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <span class="hero-subtitle reveal-text">Portfolio Académique & Professionnel</span>
-      <h1 class="reveal-text" style="transition-delay: 0.1s;">Mathématiques & <br><span
-          style="color: var(--crimson);">Informatique Avancée</span></h1>
-      <p class="reveal-text" style="transition-delay: 0.2s; margin: 0 auto 2.5rem;">
-        Étudiant en programme d'échange à l'Université Technique de Munich (TUM).
-        Passionné par l'exploration des algèbres, la cryptologie post-NISQ et la sécurité des systèmes d'information.
-      </p>
-      <div class="reveal-text" style="transition-delay: 0.3s;">
-        <a href="parcours.html" class="btn-magnetic">Découvrir mon Parcours</a>
-        <a href="cv.html" class="btn-magnetic btn-outline" style="margin-left: 1rem;">Consulter le CV</a>
-      </div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#accueil">Karl Loyau</a>
+      <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="#expertise">Expertise</a>
+        <a href="#interets">Intérêts</a>
+        <a href="#travaux">Travaux</a>
+        <a href="#publications">Publications</a>
+        <a href="#recommandations">Recommandations</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Editorial Section: Methodology & Philosophy -->
-  <section class="section-editorial">
-    <div class="container">
-      <div class="grid-auto-fit">
-        <div class="reveal-text">
-          <span class="card-meta">À Propos</span>
-          <h2>Vision & <br>Ambition</h2>
-          <p>
-            Actuellement étudiant en programme d'échange à l'Université Technique de Munich (TUM), je me spécialise en
-            mathématiques et informatique.
-            Mon parcours académique est guidé par une fascination pour les structures algébriques complexes et leur
-            application dans la cryptographie de demain (Post-Quantum & Post-NISQ).
+  <main id="accueil">
+    <section class="hero section-reveal">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Mathématiques & sécurité</p>
+          <h1>Recherche avancée en géométrie algébrique, théorie des codes et cryptographie PQC.</h1>
+          <p class="lead">
+            J’articule théorie et implémentation pour développer des solutions cryptographiques robustes,
+            adaptées aux infrastructures critiques et aux exigences de l’ère post-quantique.
           </p>
-          <p>
-            Je cherche à contribuer à des projets innovants qui allient rigueur théorique et impact technologique
-            concret.
-            Mon expérience, allant de la gestion de systèmes d'information au Groupe Bon Marché à la recherche
-            académique, m'a appris à aborder les problèmes avec pragmatisme et précision.
-          </p>
-        </div>
-        <div class="reveal-text" style="transition-delay: 0.2s;">
-          <div
-            style="background: var(--charcoal); padding: 3rem; color: var(--ivory); position: relative; overflow: hidden;">
-            <div
-              style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: var(--crimson); border-radius: 50%; opacity: 0.2;">
-            </div>
-            <h3 style="color: var(--gold); margin-bottom: 2rem;">Domaines d'Expertise</h3>
-
-            <div style="margin-bottom: 1.5rem;">
-              <h4 style="color: var(--ivory); font-size: 1.1rem; margin-bottom: 0.5rem;">Mathématiques & Crypto</h4>
-              <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 0.5rem;">Algèbre, Cryptologie
-                Post-NISQ, Produits Dérivés.</p>
-              <div class="chip-container">
-                <span class="chip"
-                  style="background: rgba(255,255,255,0.1); color: var(--ivory); border: none;">Mathématiques</span>
-                <span class="chip"
-                  style="background: rgba(255,255,255,0.1); color: var(--ivory); border: none;">Cryptographie</span>
-                <span class="chip"
-                  style="background: rgba(255,255,255,0.1); color: var(--ivory); border: none;">Finance</span>
-              </div>
-            </div>
-
-            <div style="margin-bottom: 1.5rem;">
-              <h4 style="color: var(--ivory); font-size: 1.1rem; margin-bottom: 0.5rem;">Sécurité & Systèmes</h4>
-              <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 0.5rem;">Cyber-sécurité, Gestion
-                de SI, Développement.</p>
-              <div class="chip-container">
-                <span class="chip"
-                  style="background: rgba(255,255,255,0.1); color: var(--ivory); border: none;">Cyber-sécurité</span>
-                <span class="chip"
-                  style="background: rgba(255,255,255,0.1); color: var(--ivory); border: none;">SI</span>
-                <span class="chip"
-                  style="background: rgba(255,255,255,0.1); color: var(--ivory); border: none;">Python</span>
-              </div>
-            </div>
-
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#travaux">Voir les axes de travail</a>
+            <a class="btn btn-secondary" href="#contact">Échanger</a>
           </div>
         </div>
+        <aside class="hero-card glass-card tilt-card" aria-label="Aperçu des domaines">
+          <h2>Domaines clés</h2>
+          <ul>
+            <li>Courbes algébriques, variétés et arithmétique des corps finis</li>
+            <li>Codes correcteurs pour fiabilité, performance et sécurité</li>
+            <li>Schémas post-quantiques orientés standardisation et déploiement</li>
+          </ul>
+          <div class="tag-list">
+            <span>Rigueur</span>
+            <span>Interopérabilité</span>
+            <span>Résilience</span>
+          </div>
+        </aside>
       </div>
-    </div>
-  </section>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
 
-  <!-- Editorial Section: Featured Work -->
-  <section class="section-editorial" style="background: var(--paper);">
+    <section id="expertise" class="section-reveal">
+      <div class="container">
+        <p class="eyebrow">Expertise</p>
+        <h2>Une base scientifique solide au service de la cybersécurité.</h2>
+        <div class="cards-grid">
+          <article class="glass-card feature tilt-card">
+            <h3>Géométrie algébrique</h3>
+            <p>Analyse de structures algébriques avancées pour modéliser des primitives cryptographiques de haute complexité.</p>
+          </article>
+          <article class="glass-card feature tilt-card">
+            <h3>Théorie des codes</h3>
+            <p>Conception de codes efficaces pour la correction d’erreurs, la transmission fiable et la robustesse algorithmique.</p>
+          </article>
+          <article class="glass-card feature tilt-card">
+            <h3>Cryptographie post-quantique</h3>
+            <p>Évaluation de schémas résistants aux attaques quantiques, en lien avec les contraintes de performance réelles.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="interets" class="section-reveal">
+      <div class="container split-layout">
+        <div>
+          <p class="eyebrow">Intérêts de recherche</p>
+          <h2>De la théorie pure aux architectures de sécurité applicables.</h2>
+          <p>
+            Ma démarche s’appuie sur une formalisation rigoureuse, suivie d’une validation expérimentale et d’une
+            adaptation aux environnements de production.
+          </p>
+          <ul class="focus-list">
+            <li>Codes algébriques géométriques et bornes asymptotiques.</li>
+            <li>Constructions basées sur isogénies, réseaux et codes.</li>
+            <li>Implémentation efficace et auditabilité de bibliothèques crypto.</li>
+            <li>Preuves de sécurité et modèles adversariaux hybrides.</li>
+          </ul>
+        </div>
+        <div class="glass-card illustration tilt-card" aria-hidden="true">
+          <svg viewBox="0 0 560 320" role="img">
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#d4b36f" />
+                <stop offset="100%" stop-color="#8d1f3b" />
+              </linearGradient>
+            </defs>
+            <rect x="20" y="24" width="520" height="272" rx="16" fill="rgba(255,255,255,0.02)" />
+            <path d="M48 250 C 120 70, 220 65, 290 180 C 355 285, 445 230, 510 80" fill="none" stroke="url(#g)"
+              stroke-width="5" />
+            <circle cx="120" cy="102" r="7" fill="#efe7d7" />
+            <circle cx="290" cy="180" r="7" fill="#efe7d7" />
+            <circle cx="445" cy="230" r="7" fill="#efe7d7" />
+            <path d="M120 102 L290 180 L445 230" stroke="#efe7d7" stroke-opacity=".45" stroke-dasharray="7 9"
+              fill="none" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="travaux" class="section-reveal">
+      <div class="container">
+        <p class="eyebrow">Travaux</p>
+        <h2>Feuille de route scientifique</h2>
+        <div class="timeline">
+          <article class="glass-card step">
+            <span>01 — Fondements</span>
+            <p>Algèbre commutative, géométrie des courbes et méthodes arithmétiques sur corps finis.</p>
+          </article>
+          <article class="glass-card step">
+            <span>02 — Conception</span>
+            <p>Construction et analyse de schémas de codage et de primitives cryptographiques.</p>
+          </article>
+          <article class="glass-card step">
+            <span>03 — Validation</span>
+            <p>Mesures de complexité, comparaison de sécurité et adaptation aux contraintes de déploiement.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section-reveal">
+      <div class="container">
+        <p class="eyebrow">Publications & productions</p>
+        <h2>Base documentaire (placeholders à compléter)</h2>
+        <div class="docs-grid">
+          <article class="glass-card doc-card">
+            <h3>Articles scientifiques</h3>
+            <ul>
+              <li>[Placeholder] Article #1 — Titre, conférence/journal, année.</li>
+              <li>[Placeholder] Article #2 — Titre, DOI/arXiv.</li>
+              <li>[Placeholder] Survey — algèbre, codes, PQC.</li>
+            </ul>
+          </article>
+          <article class="glass-card doc-card">
+            <h3>Thèses & mémoires</h3>
+            <ul>
+              <li>[Placeholder] Mémoire M1/M2 — sujet, encadrement.</li>
+              <li>[Placeholder] Projet de thèse — problématique et objectifs.</li>
+              <li>[Placeholder] Annexes techniques & preuves.</li>
+            </ul>
+          </article>
+          <article class="glass-card doc-card">
+            <h3>Codes & dépôts</h3>
+            <ul>
+              <li>[Placeholder] Bibliothèque de prototypes cryptographiques.</li>
+              <li>[Placeholder] Scripts d’expérimentation des codes.</li>
+              <li>[Placeholder] Benchmarks et reproductibilité.</li>
+            </ul>
+          </article>
+          <article class="glass-card doc-card">
+            <h3>Séminaires & interventions</h3>
+            <ul>
+              <li>[Placeholder] Exposé #1 — institution, date, slides.</li>
+              <li>[Placeholder] Exposé #2 — workshop, sujet ciblé.</li>
+              <li>[Placeholder] Mini-cours / lecture group.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="recommandations" class="section-reveal">
+      <div class="container">
+        <p class="eyebrow">Lettres de recommandation</p>
+        <h2>Références académiques & professionnelles</h2>
+        <div class="letters-grid">
+          <article class="glass-card letter-card">
+            <h3>[Placeholder] Professeur / Encadrant #1</h3>
+            <p>Institution, fonction, domaine.</p>
+            <a href="#">Ajouter PDF / lien</a>
+          </article>
+          <article class="glass-card letter-card">
+            <h3>[Placeholder] Professeur / Encadrant #2</h3>
+            <p>Institution, fonction, domaine.</p>
+            <a href="#">Ajouter PDF / lien</a>
+          </article>
+          <article class="glass-card letter-card">
+            <h3>[Placeholder] Référence industrielle</h3>
+            <p>Entreprise, rôle, contexte de collaboration.</p>
+            <a href="#">Ajouter PDF / lien</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-reveal">
+      <div class="container glass-card contact-card">
+        <h2>Ouvert aux collaborations académiques et R&D.</h2>
+        <p>Pour une discussion autour d’un projet, d’un stage de recherche ou d’un partenariat technique :</p>
+        <a class="btn btn-primary" href="mailto:contact@example.com">contact@example.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-      <div style="text-align: center; margin-bottom: 4rem;">
-        <span class="card-meta reveal-text">Sélection de Travaux</span>
-        <h2 class="reveal-text">Projets & Recherche</h2>
-      </div>
-
-      <div class="grid-auto-fit">
-
-        <article class="card-editorial reveal-text">
-          <div style="padding: 1.5rem; flex-grow: 1;">
-            <img src="assets/logos/TUM.png" alt="TUM" class="logo-std">
-            <span class="card-meta">Publication • Août 2025</span>
-            <h3>Algebraic Framework for Quantum Systems</h3>
-            <p>
-              "Algebraic Framework for the Characterization of Mixed States in Quantum Computing Systems".
-              Une approche mathématique pour caractériser les états mixtes dans les systèmes de calcul quantique,
-              ouvrant la voie à des protocoles de correction d'erreurs plus robustes.
-            </p>
-            <div class="chip-container">
-              <span class="chip">Quantum Computing</span>
-              <span class="chip">Algebra</span>
-              <span class="chip">Research</span>
-            </div>
-          </div>
-          <div style="padding: 1.5rem; border-top: 1px solid rgba(0,0,0,0.05);">
-            <a href="publications.html"
-              style="font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;">Lire la
-              publication →</a>
-          </div>
-        </article>
-
-        <article class="card-editorial reveal-text" style="transition-delay: 0.2s;">
-          <div style="padding: 1.5rem; flex-grow: 1;">
-            <img src="assets/logos/BonMarche.png" alt="Bon Marché" class="logo-std">
-            <span class="card-meta">Expérience • Été 2025</span>
-            <h3>Information System Intern</h3>
-            <p>
-              Stage au sein du Groupe Bon Marché. Participation à la gestion et à l'optimisation des systèmes
-              d'information d'une grande maison de luxe.
-              Analyse des flux de données et support aux équipes opérationnelles.
-            </p>
-            <div class="chip-container">
-              <span class="chip">Information Systems</span>
-              <span class="chip">Luxe</span>
-              <span class="chip">Management</span>
-            </div>
-          </div>
-          <div style="padding: 1.5rem; border-top: 1px solid rgba(0,0,0,0.05);">
-            <a href="parcours.html"
-              style="font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;">Voir le
-              parcours →</a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer-prestigious">
-    <div class="container">
-      <div class="footer-logo">Karl <span>Loyau</span></div>
-      <div class="footer-links">
-        <a href="https://github.com/Kloyau">GitHub</a>
-        <a href="https://linkedin.com/in/karl-loyau">LinkedIn</a>
-        <a href="mailto:contact@karlloyau.com">Email</a>
-        <a href="assets/cv.pdf">Curriculum Vitae</a>
-      </div>
-      <div class="copyright">
-        &copy; 2025 Karl Loyau. Tous droits réservés. <br>Conçu avec excellence académique.
-      </div>
+      <p>© 2026 Karl Loyau</p>
     </div>
   </footer>
 
