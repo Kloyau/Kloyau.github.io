@@ -317,6 +317,9 @@ footer {
   .timeline {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 930px) {
 
   .topbar {
     padding: 1rem 4vw;
